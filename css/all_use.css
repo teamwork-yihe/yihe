@@ -12,7 +12,9 @@ a {
 	text-decoration: none;
 	color: #666;
 }
-
+a:hover{
+	text-decoration: none;
+}
 #logon {
 	width: 100%;
 	height: 33px;
@@ -135,7 +137,7 @@ a {
 
 #inp {
 	width: 452px;
-	height: 29px;
+	height: 33px;
 	position: relative;
 }
 #search_ul{
@@ -308,6 +310,7 @@ a {
 	font-family: "微软雅黑";
 	float: left;
 	margin-left: 30px;
+	color: white;
 }
 
 .search_f_nav ul li img {
@@ -421,6 +424,7 @@ a {
 	margin: 0 auto;
 	padding-top: 30px;
 	font-size: 16px;
+	padding-bottom: 40px;
 }
 
 #index {
