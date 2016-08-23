@@ -132,6 +132,21 @@ $(function() {
 
 	})
 	/*********************个人地址************start********************************/
+	
+//	个人地址
+	var namethree;
+	$("#shouhuo-name").blur(function(){
+		localStorage.setItem("a",$("#shouhuo-name").val())
+		namethree = localStorage.getItem("a");
+		console.log(namethree);
+	})
+	$("#btn-add-addres").click(function(){
+		window.location.href = "../html/personeAddress.html";
+		var newadress = $("<li class='address-info-content'><div class='one-div'><span>1</span></div><div class='two-div'><span></span></div><div class='three-div'><span id='name-three'></span></div><div class='four-div'><span></span></div><div class='five-div'><span></span></div><div class='six-div'><span></span></div><div class='seven-div'><span><a href='###'></a> | <a href='###'>删除</a></span></div></li>");
+		newadress.prependTo($(".address-info-wrap"));
+		$('#name-three').html(namethree);
+	})
+	
 	$(".add-newadsbtn").click(function() {
 		window.location.href = "../html/addAddress.html";
 	})	
@@ -141,12 +156,10 @@ $(function() {
 	$("#y-new-address").click(function() {
 		window.location.href = "../html/addAddress.html";
 	})
-	$("#y-new-address").click(function() {
-		window.location.href = "../html/addAddress.html";
-	})
-	$("#btn-add-addres").click(function() {
-		window.location.href = "../html/personeAddress.html";
-	})
+//	$("#y-new-address").click(function() {
+//		window.location.href = "../html/addAddress.html";
+//	})
+	
 	/*********************个人地址************end********************************/
 	/********************绑定手机号**********start*********************************/
 	$("#iphone-a").blur(function() {
