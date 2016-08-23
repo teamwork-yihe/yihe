@@ -100,7 +100,6 @@ $(function() {
 	});
 	/***********评论框end********评论框end******评论框end*******评论框end**********/
 	/****************支付start************支付start************支付start************支付start*****************/
-
 	$(".pay-way li").click(function() {
 			var i = $(this).index();
 			//			console.log(i);
@@ -132,6 +131,23 @@ $(function() {
 		/***************充值end********充值end*****充值end********充值end***********/
 
 	})
+	/*********************个人地址************start********************************/
+	$(".add-newadsbtn").click(function() {
+		window.location.href = "../html/addAddress.html";
+	})	
+	$("#newadsa").click(function() {
+		window.location.href = "../html/addAddress.html";
+	})
+	$("#y-new-address").click(function() {
+		window.location.href = "../html/addAddress.html";
+	})
+	$("#y-new-address").click(function() {
+		window.location.href = "../html/addAddress.html";
+	})
+	$("#btn-add-addres").click(function() {
+		window.location.href = "../html/personeAddress.html";
+	})
+	/*********************个人地址************end********************************/
 	/********************绑定手机号**********start*********************************/
 	$("#iphone-a").blur(function() {
 		var a = $("#iphone-a").val();
@@ -190,8 +206,6 @@ $(function() {
 				$(this).text("收藏"); 
 			}
 		})
-		
-
 	/********************收藏页面***********end********************************/
 	
 	
