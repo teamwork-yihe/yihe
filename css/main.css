@@ -3,11 +3,14 @@ html,body{width: 100%;height: 100%;background-color: #f2f2f2;}
 .y-head{width: 100%;height: 210px;background-color: #DCAC6C;}
 .y-content{width: 100%;/*border: 1px solid red;*/}
 .y-content-round{width: 1180px;/*height: 711px;*//*background-color: darkseagreen;*/margin: auto;padding-top: 21px}
-
+/**************当前位置************start**************/
+.now-site{width: 1180px;margin: auto;margin-top: 21px;}
+.now-site a:hover{color: #EC6A17;}
+/**************当前位置***********end**************/
 /*************我的账户页面*************start**********/
 /***************个人中心left*******start********/
 .y-content-personal{width: 174px;height: 595px;border: 1px solid #d3d3d3; float: left;margin-bottom: 40px;}
-.y-content-personal span{font-size: 18px;display: block;border-bottom:1px solid #d3d3d3;padding: 16px 56px 16px 21px;}
+.y-content-personal span{font-size: 18px;display: block;border-bottom:1px solid #d3d3d3;padding: 16px 50px 16px 21px;}
 .y-content-personal ul{margin-left: 20px;}
 .y-content-personal ul li{padding: 9px 0px;}
 .y-content-personal ul li a:hover{color: #ed7122;}
@@ -22,10 +25,18 @@ html,body{width: 100%;height: 100%;background-color: #f2f2f2;}
 .y-account-top span:nth-child(2){font-size: 18px;font-weight:100;}
 .y-account-top span:nth-child(3){color:#ec6a17;font-size: 18px;font-weight:lighter;}
 .y-page1-datum{font-size: 18px;}
+.about-us{height: 710px;}
+.y-page1-datum spna{margin-left: 45px;}
 .y-account-top div{float: right;width: 172px;height: 100px;/*background-color: darksalmon;*/text-align: center;}
 .y-account-top div span{display: block;}
 .y-account-top div span:nth-child(1){margin-top: 25px;color: #ff6c00;font-size: 16px;}
 .y-account-top div span:nth-child(2){font-size: 14px;}
+
+.about-wrap h1{text-align: center;margin-top: 60px;font-weight: 400;}
+.jiesao-wrap{width: 425px;margin: auto;font-size: 14px;color: #999999;margin: 35px auto;}
+.jiesao-wrap span:nth-child(2){float: right;}
+.aucontent-wrap{width: 900px;margin: auto;padding-bottom: 118px;}
+.aucontent-wrap p{font-size:14px;margin-top: 40px;color: #666666;}
 /***************个人中心right*******end********/
 .y-vip{display: block;margin-top: 30px;/*background-color: darkgoldenrod;*/}
 .y-vip samp{font-size: 18px;color: #666666;margin-left: 30px;}
@@ -127,8 +138,8 @@ html,body{width: 100%;height: 100%;background-color: #f2f2f2;}
 /************收货地址为空********start*************/
 .addressnull-wrap{margin: 250px 300px;}
 .addressnull-wrap span:nth-child(2){font-size: 18px;vertical-align:middle;margin-left: 10px;}
-.addressnull-wrap span:nth-child(3){font-size: 24px;color: #EC6A17;vertical-align:middle}
-.y-order-title .add-newads{text-align: center;width: 90px;height: 30px;background-color: #EC6A17;font-size: 14px;color:white;display: inline-block;line-height: 30px;border-radius: 4px; float: right;margin: 15px 20px 0px 0px;}
+.addressnull-wrap span:nth-child(3){font-size: 24px;color: #EC6A17;vertical-align:middle;cursor: pointer;}
+.y-order-title .add-newads{cursor: pointer;text-align: center;width: 90px;height: 30px;background-color: #EC6A17;font-size: 14px;color:white;display: inline-block;line-height: 30px;border-radius: 4px; float: right;margin: 15px 20px 0px 0px;}
 /************收货地址为空*******end*******/
 /*************我的订单************start*****************/
 .y-p2-content-account{width: 985px;border: 1px solid sienna;float: right;margin-bottom: 40px;}
