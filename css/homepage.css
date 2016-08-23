@@ -204,10 +204,114 @@
 .left-slider{
     position: fixed;
     top: 50px;
-    right: 0;
+    left: 50%;
+    margin-left: 620px;
     padding: 5px;
     width: 50px;
     height: 500px;
     background: #fff;
     border: 1px solid #ccc;
+}
+
+.left-slider li{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-slider li div{
+    margin: 5px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.left-slider span{
+    display: inline-block;
+    width: 50px;
+    height: 10px;
+}
+
+.left-slider .top{
+    background: url(../images/homepage-icon-uparrow.jpg) no-repeat;
+}
+
+.left-slider .response{
+    background: url(../images/homepage-icon-edit.jpg) no-repeat;
+}
+
+.left-slider .question{
+    background: url(../images/homepage-icon-question.jpg) no-repeat;
+}
+
+#d_xianshi {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	background-color: black;
+	opacity: 0.6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#d_tijiao {
+	border: 5px solid gray;
+	width: 645px;
+	height: 390px;
+	margin: 0 auto;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	background-color: white;
+	z-index: 3;
+	display: none;
+}
+
+.zishu {
+	position: absolute;
+	bottom: 6px;
+	right: 10px;
+}
+
+.d_tijiao_top {
+	border: 1px solid gainsboro;
+	width: 563px;
+	height: 234px;
+	margin: 40px;
+	position: relative;
+}
+
+.tijiao {
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
+
+.d_tijiao_bottom {
+	width: 100%;
+	border: 1px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#setting,
+#no_setting {
+	border: 1px solid rgb(153, 153, 153);
+	width: 90px;
+	height: 35px;
+	border-radius: 4px;
+	background-color: rgb(153, 153, 153);
+	margin-right: 73px;
+	margin-left: 73px;
+	font-size: 22px;
+	color: white;
+	font-family: "微软雅黑";
+}
+
+#setting {
+	background-color: rgb(236, 106, 23);
+	border: 1px solid rgb(236, 106, 23);
 }
