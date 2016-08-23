@@ -1,0 +1,152 @@
+/********* body *********/
+.body{
+    width: 100%;
+    height: 620px;
+    background-image: url(../images/guide_bg.png);
+    background-size: 100% 100%;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+}
+
+.body h2{
+    padding-top: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+.place-box{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 720px;
+    height: 60px;
+}
+
+.place-search{
+    display: inline-block;
+    position: relative;
+    width: 510px;
+}
+
+.place-input{
+    display: inline-block;
+    padding-left: 10px;
+    border: none;
+    width:100%;
+    height: 60px;
+    font-size: 16px;
+}
+
+.place-name{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.place-btn{
+    display: inline-block;
+    float: right;
+    width: 170px;
+    height: 60px;
+    background: #ec6917;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.place-list{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 720px;
+    height: 260px;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: none;
+    overflow-y: scroll;
+}
+
+.up-arrow{
+    position: absolute;
+    margin: 0 auto;
+    top: 71px;
+    left: 440px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #aaa;
+    z-index: 1;
+    display: none;
+}
+
+.hot{
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.hot span{
+    float: left;
+}
+
+.hot ul{
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+
+.hot li{
+    float: left;
+    display: inline-block;
+    padding: 0 15px;
+    margin-right: 10px;
+    border: 1px solid #f00;
+    color: #f00;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cities li div{
+    display: inline-block;
+    margin-top: -10px;
+    padding: 5px 10px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.cities .city:hover{
+    background-color: #aaa;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cities li{
+    margin: 15px 0;
+    padding-left: 10px;
+    /* height: 50px; */
+    /* line-height: 50px; */
+    border-bottom: 1px solid #eee;
+}
+
+.cities .first-letter{
+    margin-right: 20px;
+    padding: 3px 20px;
+    color: #999;
+    background: #eee;
+    font-size: 18px;
+}

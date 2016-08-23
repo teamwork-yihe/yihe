@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>易和生活港|欢迎页</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../css/guide.css" />
+    </head>
+    <body>
+	<div class="header">
+	    <div class="nav">
+		<div class="nav-in">
+		    <a href="javascript:;">欢迎光临易和生活港</a>|
+		    <a href="javascript:;">我是商家</a>|
+		    <a href="javascript:;">0796-2608522</a>
+		</div>
+	    </div>
+	    <div class="info">
+		<a  class="logo-img" href="javascript:;">
+		    <img alt="" src="../images/logo.png"/>
+		</a>
+		<div class="func-box">
+		    <a class="login" href="javascript:;">登陆</a>|
+		    <a class="register" href="javascript:;">注册</a>
+		</div>
+	    </div>
+	</div>
+	<div class="body">
+	    <h2>易和生活，纵享品质</h2>
+	    <div class="place-box">
+		<div class="place-search">
+		    <div class="place-name">郑州</div>
+		    <input class="place-input" type="text" placeholder="请选择您所在的城市"/>
+		    <div class="up-arrow"></div>
+		</div>
+		<div class="place-btn" val="郑州">进入易和</div>
+	    </div>
+
+	    <!-- 使用这个JTemplate插件和在JS中向DOM插入节点性质一样，后者的代码也写在了JS中，已经注释 -->
+	    <p style="display:none;"><textarea id="hot-tpl"><!--
+
+			{#foreach $T as cityname}
+		<li>{$T.cityname}</li>
+			{#/for}
+	     -->
+	    </textarea></p>
+
+	    <p style="display:none;"><textarea id="cities-tpl"><!--
+		    {#foreach $T as city}
+		<li>
+		    <div class="first-letter">{$T.city.firstletter}</div>
+		    {#param name=length value=$T.city.cities.length}
+		    {#for index = 0 to $P.length-1}
+		    <div class="city">{$T.city.cities[$T.index].name}</div>
+		    {#/for}
+		</li>
+		    {#/for}
+	     -->
+	    </textarea></p>
+
+	    <div class="place-list">
+		<div class="hot">
+		    <span>热门城市：</span>
+		    <ul>
+		    </ul>
+		</div>
+		<ul class="cities">
+		</ul>
+	    </div>
+	</div>
+	<div class="footer">
+	    <div class="footer-cont">
+		<p>版权所有 © 2016易和生活港 保留所有权利 | 沪ICP备：12042163</p>
+		<p>易和生活 众享品质</p>
+	    </div>
+	</div>
+    </body>
+    <script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-jtemplates.min.js"></script>
+    <script type="text/javascript" src="../js/public.js"></script>
+    <script type="text/javascript" src="../js/guide.js"></script>
+</html>

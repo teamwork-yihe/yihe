@@ -1,0 +1,104 @@
+.header{
+    height: 50px;
+}
+
+.body{
+    margin: 0 auto;
+    padding: 40px;
+    width: 1100px;
+    min-width: 1100px;
+    border: 1px solid #999;
+}
+
+.cart-info{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-box{
+    display: inline-block;
+    float: right;
+    height: 80px;
+}
+
+.info-box div{
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 30px;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    background: #ccc;
+    text-align: center;
+}
+
+.info-box .third{
+    color: white;
+    background: #f84;
+}
+
+.info-box .before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #ccc;
+    border-bottom: 20px solid #ccc;
+    border-left: 20px solid transparent;
+}
+
+.info-box .after{
+    position: absolute;
+    right: -20px;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #ccc;
+}
+
+.info-box .third .before{
+    border-top-color: #f84;
+    border-bottom-color: #f84;
+}
+
+.success{
+    padding-top: 80px;
+    text-align: center;
+}
+
+.success>*{
+    margin-bottom: 30px;
+}
+
+.success p{
+    font-size: 36px;
+    color: #666;
+}
+
+.success span{
+    display: block;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.success .success-btn{
+    display: inline-block;
+    margin: 10px 20px;
+    margin-bottom: 30px;
+    width: 160px;
+    vertical-align: middle;
+    height: 45px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 6px;
+    background: #f84;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Microsoft Yahei";
+}

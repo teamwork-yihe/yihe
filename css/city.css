@@ -1,0 +1,97 @@
+.city-box{
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: #fff;
+    width: 1180px;
+    border: 1px solid #ccc;
+}
+
+.city-box>div{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+}
+
+.city-box>div div{
+    display: inline-block;
+}
+
+.cur-city,
+.hot-city,
+.rec-city{
+    margin-right: 20px;
+}
+
+.city-box .tip{
+    position: relative;
+    background: #09e;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 20px;
+    margin: 10px 0 10px 20px;
+    border-radius: 5px;
+}
+
+.city-box .tip div{
+    position: absolute;
+    top: 30px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #09e;
+}
+
+.city-list li{
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 1140px;
+}
+
+.city-list li:hover{
+    background-color: #ccc;
+}
+
+.city-list li:hover .first-letter{
+    background-color: #09e;
+    color: #fff;
+    border-color: #09e;
+}
+
+.city-list li div{
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+}
+
+.city-list .first-letter{
+    float: left;
+    width: 50px;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+.city-list .cities{
+    padding-left: 10px;
+    width: 1060px;
+    height: auto;
+}
+
+.city-list .city{
+    margin-right: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.city-list .city:hover{
+    color: red;
+}

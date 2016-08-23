@@ -1,0 +1,297 @@
+.header{
+    height: 50px;
+}
+
+.body{
+    margin: 0 auto;
+    padding: 40px;
+    width: 1100px;
+    min-width: 1100px;
+    border: 1px solid #999;
+}
+
+
+.cart-info{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-box{
+    display: inline-block;
+    float: right;
+    height: 80px;
+}
+
+.info-box div{
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 30px;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    background: #f84;
+    text-align: center;
+}
+
+.info-box .first{
+    color: #fff;
+}
+
+.info-box .second,
+.info-box .third{
+    background: #ccc;
+}
+
+.info-box .after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #ccc;
+}
+
+.info-box .first .after{
+    border-left-color: #f84;
+}
+
+.info-box .before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #ccc;
+    border-bottom: 20px solid #ccc;
+    border-left: 20px solid transparent;
+}
+
+.cart-title{
+    padding: 50px 0 0 0;
+    margin-left: 20px;
+    font-size: 26px;
+    color: #666;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    vertical-align: bottom;
+}
+
+.cart-empty{
+    padding: 100px 0;
+    height: 100px;
+    text-align: center;
+    display: none;
+}
+
+.cart-tip{
+    display: inline-block;
+    height: 110px;
+    vertical-align: top;
+}
+
+.cart-tip span{
+    font-size: 18px;
+    color: #666;
+}
+
+.cart-tip .index-btn{
+    display: block;
+    margin: 0 20px;
+    margin-top: 40px;
+    width: 135px;
+    vertical-align: middle;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 6px;
+    background: #f81;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+.good-list{
+    margin-top: 20px;
+
+}
+
+.good-item{
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+}
+
+.item-title div,
+.item-content div{
+    display: inline-block;
+}
+
+.item-title{
+    padding: 0 10px;
+    height: 40px;
+    background: #eee;
+    line-height: 40px;
+}
+
+.item-content input[type='checkbox']{
+    margin-top: -30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.item-content{
+    padding: 0 10px;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+}
+
+.item-content .che{
+    vertical-align: top;
+    margin-top: 35px;
+}
+
+.item-price{
+    padding: 20px 0;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.good-item .seller{
+    width: 420px;
+}
+
+.item-content .good-img{
+    margin-left: 10px;
+    padding: 10px 0 0 0;
+}
+
+.item-content .item-name{
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.good-item .params{
+    width: 140px;
+}
+
+.item-content .params{
+    vertical-align: top;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.good-item .single-price{
+    text-align: center;
+    width: 90px;
+}
+
+.item-content .single-price,
+.item-content .amount,
+.item-content .total-price,
+.item-content .operate{
+    margin-top: 30px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.good-item .amount{
+    text-align: center;
+    width: 140px;
+}
+
+.item-content .amount{
+    position: relative;
+    border: 1px solid #aaa;
+    height: 26px;
+    line-height: 26px;
+    width: 100px;
+    margin: 30px 20px 0 20px;
+}
+
+.item-content .amount .addOne,
+.item-content .amount .minusOne{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 28px;
+    border: none;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.item-content .amount .addOne{
+    left: 0;
+    border-right: 1px solid #ccc;
+}
+
+.item-content .amount .minusOne{
+    right: 0;
+    border-left: 1px solid #ccc;
+}
+
+.good-item .total-price{
+    text-align: center;
+    width: 80px;
+}
+
+.good-item .total-price span{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.item-price .total-price{
+    margin-left: 840px;
+}
+
+.good-item .operate{
+    text-align: center;
+    width: 150px;
+}
+
+.item-content .operate{
+    color: #00f;
+}
+
+.item-content .operate label{
+    cursor: pointer;
+}
+
+.operate-box{
+    margin-top: 20px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.operate-box label{
+    color: #008ddf;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.operate-box .good-totalprice{
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+}
+
+.operate-box .index-btn{
+    display: inline-block;
+    float: right;
+    margin: 10px 20px;
+    width: 110px;
+    vertical-align: middle;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 6px;
+    background: #f84;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}

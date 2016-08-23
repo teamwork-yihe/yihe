@@ -1,0 +1,202 @@
+.things-list{
+    margin: 0 auto;
+    width: 1180px;
+}
+
+.pic-list{
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.pic-list li{
+    display: inline-block;
+    float: left;
+    margin-left: 6px;
+}
+
+.special .title{
+    height: 90px;
+    line-height: 90px;
+    font-size: 30px;
+}
+
+.special .title span:nth-child(3){
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.special .content{
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-top: 3px solid #09e;
+}
+
+.special .content .main{
+    display: inline-block;
+    width: 312px;
+    height: 346px;
+    background: url(../images/homepage-l21.png);
+}
+
+.special .content .items{
+    display: inline-block;
+    width: 844px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.special .items .item{
+    display: inline-block;
+    float: left;
+    width: 206px;
+    height: 114px;
+    background: url(../images/homepage-l22.png) no-repeat;
+    background-position: 30px 15px;
+    background-color: #fff;
+    border-top: 1px solid transparent;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid transparent;
+}
+
+.special .items .item:hover{
+    border: 1px solid #f84;
+}
+
+.common{
+    position: relative;
+    margin-top: 20px;
+}
+
+.common .title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 34px;
+    background: url(../images/homepage-icon-car.png) no-repeat;
+    background-position: 4px;
+}
+
+.common .titles{
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 210px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #666;
+}
+
+.common .titles li{
+    float: left;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.common .slide{
+    position: absolute;
+    left: 307px;
+    width: 100px;
+    height: 3px;
+    background-color: #f84;
+    transition: all 1s;
+}
+
+.common .slide div{
+    position: absolute;
+    top: -4px;
+    left: 45px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #f84;
+}
+
+.common .content{
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-top: 3px solid #09e;
+}
+
+.common .content .l3{
+    display: inline-block;
+    width: 316px;
+    height: 510px;
+    background: url(../images/homepage-l31.png) no-repeat;
+}
+
+.common .content .items{
+    display: inline-block;
+    width: 842px;
+}
+
+.common .content .item{
+    display: inline-block;
+    float: left;
+    padding: 0 4px;
+    width: 270px;
+    height: 255px;
+}
+
+.common .content .items .item a{
+    display: inline-block;
+    position: relative;
+    width: 270px;
+    height: 150px;
+}
+
+.common .content .items:nth-child(2) .item a{
+    background: url(../images/homepage-l32.png) no-repeat;
+}
+
+.common .content .items:nth-child(3) .item a{
+    background: url(../images/homepage-l52.png) no-repeat;
+}
+
+.common .content .items:nth-child(4) .item a{
+    background: url(../images/homepage-l72.png) no-repeat;
+}
+
+.common .content .items:nth-child(3),
+.common .content .items:nth-child(4){
+    display: none;
+}
+
+.common .content .item a div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: url(../images/homepage-itembg.png) repeat-x;
+    text-align: center;
+}
+
+.common .content .info li{
+    padding-left: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-position: 10px;
+}
+
+.common .info .name{
+    background: url(../images/homepage-icon-person.png) no-repeat;
+}
+
+.common .info .telno{
+    background: url(../images/homepage-icon-mobile.png) no-repeat;
+}
+
+.common .info .location{
+    background: url(../images/homepage-icon-location.png) no-repeat;
+}
+
+.sep-banner{
+    margin: 20px 0;
+}

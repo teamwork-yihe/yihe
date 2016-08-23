@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>易和|错误页</title>
+	<link rel="stylesheet" type="text/css" href="../css/error.css"/>
+    </head>
+    <body>
+	<div class="img-box">
+	    <img alt="" src="../images/error-4.png"/>
+	    <img alt="" src="../images/error-0.png"/>
+	    <img alt="" src="../images/error-4.png"/>
+	</div>
+	<div  class="error-info1">
+	    <img src="../images/error-text.png"/>
+	</div>
+	<div class="error-info2">您要查看的网址可能已被删除、名称已被更改、或者暂时不可用</div>
+	<div class="btn-box">
+	    <button class="last" type="button">返回上一页面</button>
+	    <div class="index">返回网站首页</div>
+	</div>
+    </body>
+    <script type="text/javascript">
+     document.getElementsByClassName("last")[0].onclick = function(){
+	 history.go(-1);
+     }
+     document.getElementsByClassName("index")[0].onclick = function(){
+	 location.href="index.html";
+     }
+</script>
+</html>

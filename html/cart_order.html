@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+	<meta charset="UTF-8" />
+	<title>易和生活港|订单页面</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css" />
+	<link rel="stylesheet" type="text/css" href="../css/cart_order.css" />
+    </head>
+
+    <body>
+	<div class="header">
+	    <div class="nav">
+		<div class="nav-in">
+		    <a class="left" href="javascript:;">所在城市：<span>郑州</span><span class="drop-down"></span></a>
+		    <a href="javascript:;">欢迎光临易和生活港</a>|
+		    <a href="javascript:;">我是商家</a>|
+		    <a href="javascript:;">0796-2608522</a>
+		</div>
+	    </div>
+	</div>
+
+	<div class="body">
+	    <div class="cart-info">
+		<img class="logo" src="../images/logo.png" />
+		<div class="info-box">
+		    <div class="first">我的购物车 <span class="after"></span></div>
+		    <div class="second"><span class="before"></span>确认订单信息 <span class="after"></span></div>
+		    <div class="third"><span class="before"></span>订单成功提交</div>
+		</div>
+	    </div>
+
+	    <div class="full"></div>
+	    <div class="place-info-popup">
+		<div class="title">
+		    <span>收货人姓名</span>
+		</div>
+		<div class="new-place">
+		    <div class="buyer-name">
+			<div><span class="red">*&nbsp;</span>收货人姓名：</div>
+			<input class="buyer-name-text" type="text" value=""/>
+		    </div>
+		    <div class="buyer-location">
+			<div><span class="red">*&nbsp;</span>所在地区：</div>
+			<div class="location-box">
+			    <div class="province select-box"><span>请选择省份</span>
+				<ul class="province-list">
+				    <li value="default">请选择省份</li>
+				</ul>
+			    </div>
+			    <div class="city select-box"><span>请选择城市</span>
+				<ul class="city-list">
+				    <li value="default">请选择城市</li>
+				</ul>
+			    </div>
+			    <div class="town select-box"><span>请选择地区</span>
+				<ul class="town-list">
+				    <li value="default">请选择地区</li>
+				</ul>
+			    </div>
+			</div>
+		    </div>
+		    <div class="buyer-address">
+			<div><span class="red">*&nbsp;</span>详细地址：</div>
+			<input class="buyer-address-text" type="text" value=""/>
+		    </div>
+		    <div class="buyer-mobile">
+			<div><span class="red">*&nbsp;</span>联系电话：</div>
+			<input class="buyer-mobile-text" type="text" value=""/>
+			<div>固定电话：</div>
+			<input class="telno-prefix" type="text" value=""/>-
+			<input class="telno-suffix" type="text" value=""/>
+		    </div>
+		    <div class="btn-box">
+			<button class="close-btn" type="button">返回</button>
+			<button class="place-popup-btn" type="button">保存</button>
+		    </div>
+		</div>
+	    </div>
+	    <div class="place-info">
+		<div class="title">
+		    <span>收货人信息</span>
+		    <button class="new-place-btn" type="button">使用新地址</button>
+		</div>
+		<div class="new-place">
+		    <div class="buyer-name">
+			<div><span class="red">*&nbsp;</span>收货人姓名：</div>
+			<input class="buyer-name-text" type="text" value=""/>
+		    </div>
+		    <div class="buyer-location">
+			<div><span class="red">*&nbsp;</span>所在地区：</div>
+			<div class="location-box">
+			    <div class="province select-box"><span>请选择省份</span>
+				<ul class="province-list">
+				    <li sel="sel">请选择省份</li>
+				</ul>
+			    </div>
+			    <div class="city select-box"><span>请选择城市</span>
+				<ul class="city-list">
+				    <li sel="sel">请选择城市</li>
+				</ul>
+			    </div>
+			    <div class="town select-box"><span>请选择地区</span>
+				<ul class="town-list">
+				    <li>请选择地区</li>
+				</ul>
+			    </di>
+			    </div>
+			</div>
+		    </div>
+		    <div class="buyer-address">
+			<div><span class="red">*&nbsp;</span>详细地址：</div>
+			<input class="buyer-address-text" type="text" value=""/>
+		    </div>
+		    <div class="buyer-mobile">
+			<div><span class="red">*&nbsp;</span>联系电话：</div>
+			<input class="buyer-mobile-text" type="text" value=""/>
+			<div>固定电话：</div>
+			<input class="telno-prefix" type="text" value=""/>-
+			<input class="telno-suffix" type="text" value=""/>
+		    </div>
+		    <button class="place-btn" type="button">确认并设为默认地址</button>
+		</div>
+		<div id="place-list">
+		    <ul class="place-list">
+			<!--
+			     <li>
+			     <div class="che"><div></div></div>
+			     <div class="username">用户姓名</div>
+			     <div class="province">省份</div>
+			     <div class="city">城市</div>
+			     <div class="location">地区</div>
+			     <div class="street">具体地址</div>
+			     <div class="telphone">电话号码</div>
+			     <div class="delete">删除</div>
+			     <div class="modify">修改</div>
+			     <div class="default">默认地址</div>
+			     </li>
+			   -->
+		    </ul>
+		    <div class="show-more">展开其他地址 <img alt="" src="../images/cart-icon-dropdown.png"/></div>
+		    <div class="hide-more" style="display:none;">收起地址 <img alt="" src="../images/cart-icon-dropup.png"/></div>
+		</div>
+		<div class="good-info">
+		    <div class="item-list">
+			<div class="single-item">
+			    <div class="good-item">
+				<div class="item-title">
+				    <div class="seller">【易和】苹果园</div>
+				    <div class="params">规格</div>
+				    <div class="single-price">单价</div>
+				    <div class="amount">数量</div>
+				    <div class="total-price">金额</div>
+				</div>
+				<div class="item-content">
+				    <div class="seller">
+					<img class="good-img" src="../images/cart-goodimg.png" />
+					<div class="item-name">西瓜</div>
+				    </div>
+				    <div class="params">
+					<div>颜色：红色</div>
+					<div>重量：1公斤以上</div>
+				    </div>
+				    <div class="single-price">￥<span>10</span></div>
+				    <div class="amount">
+					<button class="addOne" type="button">-</button>
+					<span>10</span>
+					<button class="minusOne" type="button">+</button>
+				    </div>
+				    <div class="total-price">￥<span>100.0</span></div>
+				</div>
+				<div class="item-content">
+				    <div class="seller">
+					<img class="good-img" src="../images/cart-goodimg.png" />
+					<div class="item-name">西瓜</div>
+				    </div>
+				    <div class="params">
+					<div>颜色：红色</div>
+					<div>重量：1公斤以上</div>
+				    </div>
+				    <div class="single-price">￥<span>100</span></div>
+				    <div class="amount">
+					<button class="addOne" type="button">-</button>
+					<span>10</span>
+					<button class="minusOne" type="button">+</button>
+				    </div>
+				    <div class="total-price">￥<span>100.00</span></div>
+				</div>
+				<div class="item-price">
+				    <div class="seller-send">商家配送</div>
+				    <div class="by-money">到店消费</div>
+				    <div class="trans-fee">
+					<p>运费</p>
+					<span class="orange">￥<span>100.00</span></span>
+				    </div>
+				    <div class="good-price">
+					<p>商品金额</p>
+					<span class="orange">￥<span>100.00</span></span>
+				    </div>
+				    <div class="total-price">
+					<p>小计</p>
+					<span class="orange">￥<span>100.00</span></span>
+				    </div>
+				</div>
+			    </div>
+			    <div class="bill-info">
+				<div class="title">开票信息</div>
+				<ul class="bill-type">
+				    <li><div class="item rad" name="bill-item1" checked="checked"><div></div></div>不需要</li>
+				    <li><div class="item rad" name="bill-item1"><div></div></div>个人</li>
+				    <li><div class="item rad" name="bill-item1"><div></div></div>单位</li>
+				</ul>
+				<div class="bill-text">
+				    发票抬头：<input ="bill-info-text" type="text" />请填写后认真核对发票信息
+				</div>
+			    </div>
+			    <div class="remark-info">
+				<div class="title">添加订单备注</div>
+				<input type="text" class="remark-info-text" placeholder="限45个字，请填写有关商品、支付、发票等信息" />
+			    </div>
+			</div>
+			<div class="single-item">
+			    <div class="good-item">
+				<div class="item-title">
+				    <div class="seller">【易和】苹果园</div>
+				    <div class="params">规格</div>
+				    <div class="single-price">单价</div>
+				    <div class="amount">数量</div>
+				    <div class="total-price">金额</div>
+				</div>
+				<div class="item-content">
+				    <div class="seller">
+					<img class="good-img" src="../images/cart-goodimg.png" />
+					<div class="item-name">西瓜</div>
+				    </div>
+				    <div class="params">
+					<div>颜色：红色</div>
+					<div>重量：1公斤以上</div>
+				    </div>
+				    <div class="single-price">￥<span>1</span></div>
+				    <div class="amount">
+					<button class="addOne" type="button">-</button>
+					<span>10</span>
+					<button class="minusOne" type="button">+</button>
+				    </div>
+				    <div class="total-price">￥<span>100.00</span></div>
+				</div>
+				<div class="item-content">
+				    <div class="seller">
+					<img class="good-img" src="../images/cart-goodimg.png" />
+					<div class="item-name">西瓜</div>
+				    </div>
+				    <div class="params">
+					<div>颜色：红色</div>
+					<div>重量：1公斤以上</div>
+				    </div>
+				    <div class="single-price">￥<span>1000</span></div>
+				    <div class="amount">
+					<button class="addOne" type="button">-</button>
+					<span>10</span>
+					<button class="minusOne" type="button">+</button>
+				    </div>
+				    <div class="total-price">￥<span>100.00</span></div>
+				</div>
+				<div class="item-price">
+				    <div class="seller-send">商家配送</div>
+				    <div class="by-money">到店消费</div>
+				    <div class="trans-fee">
+					<p>运费</p>
+					<span class="orange">￥<span>100.00</span></span>
+				    </div>
+				    <div class="good-price">
+					<p>商品金额</p>
+					<span class="orange">￥<span>100.00</span></span>
+				    </div>
+				    <div class="total-price">
+					<p>小计</p>
+					<span class="orange">￥<span>100.00</span></span>
+				    </div>
+				</div>
+			    </div>
+			    <div class="bill-info">
+				<div class="title">开票信息</div>
+				<ul class="bill-type">
+				    <li><div class="item rad" name="bill-item2" checked="checked"><div></div></div>不需要</li>
+				    <li><div class="item rad" name="bill-item2"><div></div></div>个人</li>
+				    <li><div class="item rad" name="bill-item2"><div></div></div>单位</li>
+				</ul>
+				<div class="bill-text">
+				    发票抬头：<input ="bill-info-text" type="text" />请填写后认真核对发票信息
+				</div>
+			    </div>
+			    <div class="remark-info">
+				<div class="title">添加订单备注</div>
+				<input type="text" class="remark-info-text" placeholder="限45个字，请填写有关商品、支付、发票等信息" />
+			    </div>
+			</div>
+		    </div>
+
+		    <div class="price-info">
+			<div>总价：<span class="orange">￥</span><span class="good-total-price orange">20</span></div>
+		    </div>
+		    <div class="discount">
+			使用积分抵扣（您有<span class="discount-num orange">1000</span>积分）
+			<input type="text" name="discount-use-num" id="discount-use-num" value="" />
+			<span>-￥ <span class="money-less orange">0</span></span>
+		    </div>
+		    <div class="true-price">
+			应付金额：<span class="orange">￥<span class="true-price-num orange">20.00</span></span>
+		    </div>
+		    <div class="discount-get">
+			订单完成后可获得积分：<span class="discount-get-num orange">0</span>
+		    </div>
+		    <button type="button" class="submit-btn">提交订单</button>
+		</div>
+
+	    </div>
+
+	    <div class="footer">
+		<div class="footer-cont">
+		    <p>版权所有 © 2016易和生活港 保留所有权利 | 沪ICP备：12042163</p>
+		    <p>易和生活 众享品质</p>
+		</div>
+	    </div>
+    </body>
+    <script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../js/public.js"></script>
+    <script type="text/javascript" src="../js/cart_order.js"></script>
+</html>
