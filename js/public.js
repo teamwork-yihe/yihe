@@ -297,5 +297,5 @@ $(function(){
     // “购物车”按钮
     $(document).on("click","#geren_right",function(){
 	location.href = "error.html";
-    }
+    });
 });
