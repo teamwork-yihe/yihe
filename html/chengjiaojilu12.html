@@ -4,6 +4,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>成交记录</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/all_use.css" />
 		<link rel="stylesheet" type="text/css" href="../css/shangpin11.css" />
 		<link rel="stylesheet" type="text/css" href="../css/chengjiaojilu12.css" />
@@ -181,10 +183,10 @@
 					<div class="search_7">
 						<a href="###">在线客服</a>
 						<div class="qq_hidden">
-							<img src="../images/goudan/qq_r1.png"/>
-							<img src="../images/goudan/qq_r2.png"/>
-							<img src="../images/goudan/qq_r1.png"/>
-							<img src="../images/goudan/qq_r2.png"/>
+							<img src="../images/goudan/qq_r1.png" />
+							<img src="../images/goudan/qq_r2.png" />
+							<img src="../images/goudan/qq_r1.png" />
+							<img src="../images/goudan/qq_r2.png" />
 						</div>
 					</div>
 				</div>
@@ -206,7 +208,8 @@
 		<!--中间-->
 		<div class="d_content">
 			<div class="d_c_left">
-				<img src="../images/goudan/geren_big.png" />
+				<img id="img_big" src="../images/goudan/geren_big.png" />
+				<canvas id="mycanvas" width="360" height="360"></canvas>
 				<div class="lunbo_wrap">
 					<div class="lunbo_content">
 						<img src="../images/goudan/geren_small.png" alt="" />
@@ -260,7 +263,7 @@
 				</div>
 			</div>
 			<div class="d_c_right">
-				<a href="hangye08.html"><img src="../images/goudan/qq.png" /></a>	
+				<a href="hangye08.html"><img src="../images/goudan/qq.png" /></a>
 				<img src="../images/goudan/qq_r1.png" />
 				<img src="../images/goudan/qq_r2.png" />
 			</div>
@@ -269,9 +272,15 @@
 		<div class="wrap_footer">
 			<div class="wrap_nav">
 				<ul>
-					<li><a href="shangpin11.html">商品详情</a></li>
-					<li><a href="shangpinpingjia13.html">商品评价</a></li>
-					<li><a href="chengjiaojilu12.html">成交记录</a></li>
+					<li>
+						<a href="shangpin11.html">商品详情</a>
+					</li>
+					<li>
+						<a href="shangpinpingjia13.html">商品评价</a>
+					</li>
+					<li>
+						<a href="chengjiaojilu12.html">成交记录</a>
+					</li>
 					<li></li>
 				</ul>
 			</div>
@@ -313,6 +322,88 @@
 					<input type="text" class="changes" />页
 					<input type="button" name="" id="sure" value="确定" />共<span>215</span>条
 				</div>
+			</div>
+		</div>
+		<!--********************公共部分最底部*****start**********-->
+		<div class="y-footer-wrap">
+			<div class="y-f-top">
+				<div class="c">
+					<a href="###"><img align="absmiddle" src="../images/footer_z.gif" /><span>正品保证</span></a>
+					<a href="###"><img align="absmiddle" src="../images/footer_q.gif" /><span>全程追踪</span></a>
+					<a href="###"><img align="absmiddle" src="../images/footer_k.gif" /><span>客户监督</span></a>
+					<a href="###"><img align="absmiddle" src="../images/footer_w.gif" /><span>售后无忧</span></a>
+					<a href="###"><img align="absmiddle" src="../images/footer_s.gif" /><span>准时送达</span></a>
+				</div>
+			</div>
+			<div class="y-f-center">
+				<div class="c">
+					<a href="###"><img class="y_footer_logo" src="../images/footer_logo.png" /></a>
+					<div class="y-twocode">
+						<div><img src="../images/footer_w.png" /></div>
+						<div><img src="../images/footer_w.png" /></div>
+						<div></div>
+						<div class="y-p1-weixin" style="display: block;">
+							<span><img align="absmiddle" src="../images/footer_ww.gif" alt=""/> 官方微信</span>
+							<span><img align="absmiddle" src="../images/footer_wp.gif" alt=""/> APP下载</span>
+						</div>
+					</div>
+					<ul class="y-p1-ul">
+						<li>
+							<h2>关于易和</h2>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+						</li>
+						<li>
+							<h2>配送说明</h2>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+						</li>
+						<li>
+							<h2>售后服务</h2>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+						</li>
+						<li>
+							<h2>加盟易和</h2>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+							<p>
+								<a href="###">新用户注册</a>
+							</p>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<div class="y-f-buttom">
+				<div class="y-file-one"><span>版权所有 © 2016易和生活港  保留所有权利 | 沪ICP备12042163</span></div>
+				<div class="y-file-two"><span>易和生活  纵享品质</span></div>
+
 			</div>
 		</div>
 		<!--弹窗-->

@@ -82,6 +82,24 @@ $(".wrap_nav ul li").click(function  () {
 	    "border":"1px solid gainsboro"
 	})
 })
+//fangdajing shangpin13
+var canvas = document.getElementById("mycanvas");
+var d_content = document.getElementsByClassName("d_content")[0];
+var context = canvas.getContext("2d");
+var img = document.getElementById("img_big");
+canvas.onmouseenter = function() {
+	canvas.onmousemove = function(e) {
+//		console.log("1");
+		var ev = e || window.event;
+		var x = ev.pageX - d_content.offsetLeft - 20;
+		var y = ev.pageY - d_content.offsetTop - 20;
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		context.drawImage(img, x, y, 50, 50, x - 50, y - 50, 100, 100);
+	}
+}
+canvas.onmouseleave = function() {
+	context.clearRect(0, 0, canvas.width, canvas.height);
+}
 //加减++++++++++++++++++++++++++++++++++++++++++++++++
 var n=1;
 $(".center_xuanze ul li").eq(0).click(function  () {	
