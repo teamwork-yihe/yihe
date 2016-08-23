@@ -242,9 +242,60 @@ function popup(str){
 }
 
 $(function(){
+    /********* 定义全局导航栏上的事件  *********/
     // 页面左上角城市信息显示，全局针对 .city-name 元素
     $(".city-name").html(localStorage.getItem('yihe_cityname'));
     $(document).on("click",".city-name",function(){
 	location.href = "city.html";
     });
+    // 页面上用户信息显示判断
+    var usertelno = localStorage.getItem("yihe_usertelno");
+    // console.log(usertelno);
+    if(usertelno == "" || usertelno == null){
+	$(".user-info").hide();
+	$(".register-login").show();
+	$(".login-out").hide();
+    }else{
+	$(".user-info").show();
+	$(".user-info a").html(usertelno);
+	$(".register-login").hide();
+	$("login-out").show();
+    }
+    // 用户退出按钮
+    $(document).on("click",".login-out a",function(){
+	localStorage.removeItem("yihe_usertelno");
+	location.href = "homepage.html";
+    });
+    // 我的订单
+    $(document).on("click",".my-news",function(){
+	var usertelno = localStorage.getItem("yihe_usertelno");
+	if(usertelno == "" || usertelno == null){
+	    location.href="login.html";
+	}else{
+	    location.href="error.html";
+	}
+    });
+    // 我的消息
+    $(document).on("click",".my-order",function(){
+	var usertelno = localStorage.getItem("yihe_usertelno");
+	if(usertelno == "" || usertelno == null){
+	    location.href="login.html";
+	}else{
+	    location.href="error.html";
+	}
+    });
+
+    /********* 定义全局搜索部分的事件  *********/
+    // logo点击
+    $(document).on("click","#search .logo",function(){
+	location.href = "homepage.html";
+    });
+    // “我的易和”按钮
+    $(document).on("click","#geren_left",function(){
+	location.href = "error.html";
+    });
+    // “购物车”按钮
+    $(document).on("click","#geren_right",function(){
+	location.href = "error.html";
+    }
 });

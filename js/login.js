@@ -119,7 +119,8 @@ $(function(){
 	if(loginType == 0){
 	    if(checkUser(telno, pass) && isCode1){
 		popup("登陆成功");
-		setTimeout("location.href='error.html';",3000);
+		localStorage.setItem("yihe_usertelno",telno);
+		setTimeout("location.href='homepage.html';",3000);
 	    }else{
 		popup("登陆失败");
 	    }
@@ -128,7 +129,8 @@ $(function(){
 	    for(var i = 0; i < userInfo.length; i++) {
 		if(userInfo[i].username == telno && isCode2){
 		    popup("登陆成功");
-		    setTimeout("location.href='error.html';",3000);
+		    localStorage.setItem("yihe_usertelno",telno);
+		    setTimeout("location.href='homepage.html';",3000);
 		    flag = true;
 		    break;
 		}

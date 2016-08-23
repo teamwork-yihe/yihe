@@ -1,0 +1,53 @@
+| HTML文件名             | 中文说明                     | 是否归属某个部分 | 作者   |
+|------------------------+------------------------------+------------------+--------|
+| aboutUs                | 关于我们                     |                  | 杨前进 |
+| accountRecharge        | 帐户充值                     |                  | 杨前进 |
+| addAddress             | 添加新地址                   | 个人中心         | 杨前进 |
+| addressNull            | 收货地址为空                 | 个人中心         | 杨前进 |
+| all_use                | 全局主要页面的导航和搜索区域 | 全局页面         | 董伟洋 |
+| bindingphone           | 绑定手机                     | 个人中心         | 杨前进 |
+| bindingPhonePage1      | 换绑手机1                    | 个人中心         | 杨前进 |
+| bindingPhonePage2      | 换绑手机2                    | 个人中心         | 杨前进 |
+| bindingPhonePage3      | 换绑手机3                    | 个人中心         | 杨前进 |
+| cart_index             | 购物车                       | 购物车           | 刚代霖 |
+| cart_order             | 确认订单                     | 购物车           | 刚代霖 |
+| cart_pay               | 订单支付                     | 购物车           | 刚代霖 |
+| cart_success           | 支付成功                     | 购物车           | 刚代霖 |
+| chengjiaojilu12        | 成交记录                     | 商家信息         | 董伟洋 |
+| city                   | 城市列表信息                 |                  | 刚代霖 |
+| error                  | 404报错页面                  |                  | 刚代霖 |
+| Evaluate               | 商品评价                     | 个人中心         | 杨前进 |
+| guide                  | 导航页面                     |                  | 刚代霖 |
+| hangye08               | 行业商家                     | 商家信息         | 董伟洋 |
+| homepage               | 首页                         |                  | 刚代霖 |
+| integralExchange       | 积分兑换                     | 个人中心         | 杨前进 |
+| jiaruyihe03            | 加入易和                     | 商家信息         | 董伟洋 |
+| jifenshangcheng02      | 积分商城                     |                  | 董伟洋 |
+| jingxuan01             | 精选品牌                     | 商家信息         | 董伟洋 |
+| jinritejia10           | 今日特价                     | 商家信息         | 董伟洋 |
+| login_shop             | 商家登陆                     |                  | 刚代霖 |
+| login                  | 登陆                         |                  | 刚代霖 |
+| messageDetail          | 我的消息(详情)               | 个人中心         | 杨前进 |
+| orderDetails           | 订单详情                     | 个人中心         | 杨前进 |
+| orderEvaluateCommodity | 订单评价列表                 | 个人中心         | 杨前进 |
+| orderNull              | 订单为空                     | 个人中心         | 杨前进 |
+| personeAccount         | 我的账户                     | 个人中心         | 杨前进 |
+| personeAddress         | 地址管理                     | 个人中心         | 杨前进 |
+| personeBrowse          | 最近浏览                     | 个人中心         | 杨前进 |
+| personeCollect         | 我的收藏                     | 个人中心         | 杨前进 |
+| personeIntegral        | 我的积分                     | 个人中心         | 杨前进 |
+| personeMeans           | 个人资料                     | 个人中心         | 杨前进 |
+| personeMessage         | 我的消息（列表）             | 个人中心         | 杨前进 |
+| personeOrder           | 我的订单（列表）             | 个人中心         | 杨前进 |
+| personePassword        | 修改密码                     | 个人中心         | 杨前进 |
+| personeTicket          | 我的易和券                   | 个人中心         | 杨前进 |
+| rechargePay            | 充值支付                     |                  | 杨前进 |
+| shangjia05             | 商家搜索结果页               | 商家信息         | 董伟洋 |
+| shangjia14             | 商家详情                     | 商家信息         | 董伟洋 |
+| shangjiasousuo06       | 商品搜索结果页               | 商家信息         | 董伟洋 |
+| shangpin11             | 商品详情页                   | 商家信息         | 董伟洋 |
+| shangpinpingjia13      | 商品评价页                   | 商家信息         | 董伟洋 |
+| shenqingruzhu15        | 商家申请入驻易和             | 商家信息         | 董伟洋 |
+| sousuoweikong04        | 搜索为空                     | 商家信息         | 董伟洋 |
+| ticketUser             | 易和券使用                   | 个人中心         | 杨前进 |
+| zhengpin07             | 正品保障                     | 商家信息         | 董伟洋 |
