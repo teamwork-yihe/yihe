@@ -240,3 +240,11 @@ function popup(str){
 	info.remove();
     });
 }
+
+$(function(){
+    // 页面左上角城市信息显示，全局针对 .city-name 元素
+    $(".city-name").html(localStorage.getItem('yihe_cityname'));
+    $(document).on("click",".city-name",function(){
+	location.href = "city.html";
+    });
+});

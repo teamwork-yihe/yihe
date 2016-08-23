@@ -22,22 +22,40 @@ $(".search_footer div a").mousemove(function() {
 
 $(".search_nav>div>a").eq(5).attr("change", "changes");
 $(".search_nav div a").not(".search_f").mouseenter(function() {
-	if($(this).attr("change") == "undefined" || typeof($(this).attr("change")) == "undefined") {
+		if($(this).attr("change") == "undefined" || typeof($(this).attr("change")) == "undefined") {
+			$(this).css("color", "rgb(255, 108, 0)");
+			console.log("11111");
+		}
+	}).mouseleave(function() {
+		if($(this).attr("change") == "undefined" || typeof($(this).attr("change")) == "undefined") {
+			$(this).css("color", "black");
+		}
+	}).click(function() {
+		$(".search_nav div a").not(".search_f").css("color", "#666");
 		$(this).css("color", "rgb(255, 108, 0)");
-		console.log("11111");
-	}
-}).mouseleave(function() {
-	if($(this).attr("change") == "undefined" || typeof($(this).attr("change")) == "undefined") {
-		$(this).css("color", "black");
-	}
-}).click(function() {
-	$(".search_nav div a").not(".search_f").css("color", "#666");
-	$(this).css("color", "rgb(255, 108, 0)");
-	$(".search_nav div a").not(".search_f").removeAttr("change", "changes");
-	$(this).attr("change", "changes");
-	$(".search_nav div a").filter(".search_f").css("color", "white");
-})
+		$(".search_nav div a").not(".search_f").removeAttr("change", "changes");
+		$(this).attr("change", "changes");
+		$(".search_nav div a").filter(".search_f").css("color", "white");
+	})
+	//搜索内容判断显示
+function abc(data) {
+	$("#search_ul").html("");
+	for(var i = 0; i < data.s.length; i++) {
+		var ls = "<li><a href=https://www.baidu.com/s?wd=" + data.s[i] + ">" + data.s[i] + "</a></li>";
+		if($("#search_ul li").length >= 6) {
+			$("#search_ul").val($("#search_ul li").slice(0, 6));
+			return;
+		}
+		$("#search_ul").append(ls);
 
+	}
+}
+$('#inp').bind('input propertychange', function() { 
+	var script = document.createElement('script');
+	script.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + $("#inp").val() + "&cb=abc";
+	document.head.appendChild(script);
+	document.head.removeChild(script);
+});
 //轮播
 var len = $(".num > li").length;
 var index = 0; //图片序号
@@ -75,7 +93,7 @@ $(".change_center ul li").not(".five").mousemove(function() {
 	$(this).css("color", "white");
 });
 
-//erjicaidan
+//二级菜单
 $(".search_nav div").eq(0).mouseover(function() {
 		//			$(".navs").css("transform","rotate(180deg)");
 		$(".search_f_nav").css("display", "block");
@@ -83,7 +101,7 @@ $(".search_nav div").eq(0).mouseover(function() {
 		//			$(".navs").css("transform","rotate(0deg)");
 		$(".search_f_nav").css("display", "none");
 	})
-	//二级菜单
+	//三级菜单
 var index = 0;
 $(".search_f_nav>ul li").mousemove(function(e) {
 	index = $(".search_f_nav ul li").index(this);

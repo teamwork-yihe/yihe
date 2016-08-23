@@ -136,8 +136,24 @@ a {
 #inp {
 	width: 452px;
 	height: 29px;
+	position: relative;
 }
-
+#search_ul{
+	margin-left: 0;
+	list-style: none;
+	width: 452px;
+	position: absolute;
+	background-color: #FF6C00;
+	z-index: 5;
+}
+#search_ul li{
+	height: 15px;
+	overflow: hidden;
+	background-color: azure;
+}
+#search_ul li a{
+	color: #FF6C00;
+}
 .inp_left img {
 	float: right;
 	margin-right: 9px;

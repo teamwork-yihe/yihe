@@ -1,0 +1,151 @@
+#d_logo {
+	width: 100%;
+}
+
+#d_logo img {
+	width: 100%;
+}
+
+#center_img {
+	width: 1180px;
+	height: 600px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+	padding-top: 94px;
+	/*border: 1px solid rgb(239,239,239);*/
+}
+
+.left_s,
+.right_s {
+	border: 1px solid rgb(0, 141, 225);
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: white;
+}
+
+.left_s {
+	float: left;
+	border: 1px solid rgb(229, 84, 19);
+}
+
+.right_s {
+	float: right;
+}
+
+.left_s_y {
+	font-size: 30px;
+	color: rgb(236, 106, 23);
+	margin-top: 80px;
+}
+
+.left_s_y1 {
+	margin-top: 30px;
+	font-size: 26px;
+	color: rgb(102, 102, 102);
+	font-family: Arial, Verdana, "Microsoft Yahei";
+}
+
+.left_s_p {
+	margin-top: 30px;
+	margin-bottom: 25px;
+	font-size: 18px;
+	color: gray;
+}
+
+.left_s_b {
+	width: 168px;
+	height: 43px;
+	margin-top: 0px;
+	font-size: 18px;
+	color: white;
+	outline: none;
+	border-radius: 7px;
+	background-color: rgb(236, 106, 23);
+	border-color: rgb(236, 106, 23);
+}
+
+.right_s .left_s_y {
+	color: rgb(0, 141, 225);
+}
+
+.right_s .left_s_b {
+	background-color: rgb(0, 141, 225);
+	border-color: rgb(0, 141, 225);
+}
+
+
+/*tankuang*/
+
+#d_xianshi {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	background-color: black;
+	opacity: 0.6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#d_tijiao {
+	border: 5px solid gray;
+	width: 645px;
+	height: 390px;
+	margin: 0 auto;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	background-color: white;
+	z-index: 3;
+	display: none;
+}
+
+.zishu {
+	position: absolute;
+	bottom: 6px;
+	right: 10px;
+}
+
+.d_tijiao_top {
+	border: 1px solid gainsboro;
+	width: 563px;
+	height: 234px;
+	margin: 40px;
+	position: relative;
+}
+
+.tijiao {
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
+
+.d_tijiao_bottom {
+	width: 100%;
+	border: 1px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#setting,
+#no_setting {
+	border: 1px solid rgb(153, 153, 153);
+	width: 90px;
+	height: 35px;
+	border-radius: 4px;
+	background-color: rgb(153, 153, 153);
+	margin-right: 73px;
+	margin-left: 73px;
+	font-size: 22px;
+	color: white;
+	font-family: "微软雅黑";
+}
+
+#setting {
+	background-color: rgb(236, 106, 23);
+	border: 1px solid rgb(236, 106, 23);
+}

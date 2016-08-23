@@ -1,0 +1,59 @@
+.wrap_nav ul li:nth-child(1) {
+	color: #008de1;
+	border: 0;
+	background-color: rgb(239, 239, 239);
+	border-top: 1px solid gainsboro;
+}
+.wrap_nav ul li:nth-child(2) {
+	color: #008de1;
+	border: 0;
+	background-color: white;
+	border-top: 2px solid #008de1;
+}
+.wrap_includes {
+	margin: 60px;
+	width: 1059px;
+	margin-bottom: 45px;
+}
+.every_is{
+	border-bottom: 1px solid gainsboro;
+	width: 100%;
+	height: 180px;
+}
+.include_left{
+	float: left;
+	border: 1px;
+	width: 99px;
+}
+.include_left img{
+	float: left;
+}
+.name_is{
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: "宋体";
+}
+.right_top{
+	border: 1px;
+    width: 950px;
+    height: 23px;
+    float: left;
+   	margin: 10px 0 18px 0;
+}
+.time_is{
+    float: left;
+    margin: 4px;
+}
+.p_is{
+	    font-size: 18px;
+    font-family: "宋体";
+}
+.right_top img{
+	float: left;
+	margin: 0 0 0 5px;
+}
+.every_is>img{
+	margin: 20px 10px 0 0;
+}

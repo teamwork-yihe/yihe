@@ -1,0 +1,61 @@
+/*daohang*/
+#nav_center{
+    width: 1180px;
+    margin: 0 auto;
+    height: 34px;
+    padding-top: 20px;
+}
+.breadcrumb{
+    font-size: 14px;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: rgb(239,239,239);
+    border-radius: 4px;
+    font-family: "宋体";
+    color: rgb(242,242,242);
+}
+.breadcrumb li{
+	float: left;
+}
+.breadcrumb li img{
+	margin-left: 5px;
+    margin-right: 5px;
+}
+.breadcrumb>.active{
+	color: rgb(236,106,23);
+}
+/*neirong*/
+#d_content{
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 10px;
+    background-color: white;
+}
+.center_img{
+    width: 218px;
+    height: 336px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: inline-table;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.center_img img:nth-child(1) {}
+
+.center_img img:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center_img img:nth-child(3) {
+    float: left;
+    padding-left: 21px;
+}
+
+
+/*鼠标移入*/
+.center_img:hover{
+	border: 1px solid orange;
+}

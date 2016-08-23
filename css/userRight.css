@@ -1,0 +1,9 @@
+.content-account,.account-top,.account-between{width: 986px;}
+.content-account{height: 672px;background-color: skyblue;float: right;}
+.account-top{background-color: #fff4ec;border:1px solid #d3d3d3;padding: 20px 0px 18px 20px;}
+.account-between{height: 210px;background-color:#ffffff;border:1px solid #d3d3d3;}
+
+.account-top span:nth-child(2){font-size: 1.8rem;margin-left: 2.0rem;font-weight:100;}
+.account-top span:nth-child(3){color:#ec6a17;font-size: 1.8rem;font-weight:lighter;}
+
+

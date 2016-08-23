@@ -1,0 +1,54 @@
+.wrap_nav ul li:nth-child(1) {
+	color: #323333;
+	background-color: rgb(239, 239, 239);
+	border: 1px solid gainsboro;
+}
+.wrap_nav ul li:nth-child(3) {
+	color: #008de1;
+	border: 0;
+	background-color: white;
+	border-top: 2px solid #008de1;
+}
+/**/
+.wrap_include {
+	margin: 60px;
+	width: 1059px;
+	margin-bottom: 45px;
+}
+.wrap_include ul{
+	list-style-type: none;
+}
+.wrap_include ul li{
+	border-bottom: 1px solid gray;
+}
+.wrap_include ul li:nth-child(n+2){
+	border-bottom: 1px dashed gainsboro;
+}
+.wrap_include ul li div{
+    display: inline-block;
+    border: 1px;
+    width: 260px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 17px;
+    font-family: "宋体";
+    color: rgb(102,102,102);
+}
+.wrap_include ul li div:nth-child(1){
+    text-align: left;
+    font-size: 17px;
+    color: rgb(102,102,102);
+}
+.wrap_include ul li div:nth-child(2){
+	color: #ec6a17;
+}
+.wrap_include ul li div:nth-child(4){
+	text-align: right;
+}
+.wrap_include ul li:nth-child(1) div{
+	color: black;
+}
+.wrap_include ul li:nth-child(1) div:nth-child(4){
+    width: 200px;
+}

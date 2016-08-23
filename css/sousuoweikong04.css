@@ -1,0 +1,36 @@
+#d_logo{
+	width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid rgb(239,239,239);
+}
+.center_img{
+	border: 1px solid rgb(239,239,239);
+    width: 328px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 253px;
+}
+.center_img_left{
+	float: left;
+}
+.center_img_right{
+	float: right;
+}
+.center_img_top{
+	font-size: 18px;
+	color: gray;
+    font-family: serif;
+}
+#fangdajing{
+    width: 170px;
+    height: 45px;
+    color: white;
+    font-family: serif;
+    font-size: 18px;
+    border-radius: 7px;
+    margin-top: 45px;
+    outline: none;
+    background-color: rgb(229,84,19);
+    border-color: rgb(229,84,19);
+}

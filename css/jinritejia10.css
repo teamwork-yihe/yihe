@@ -1,0 +1,56 @@
+.d_all{
+	border: 1px;
+	width: 1180px;
+	margin: 0 auto;
+}
+
+.lunbo_wrap{	    		
+	height: 397px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.lunbo_content{
+	height: 397px;
+	width: 9000px;
+	position: absolute;
+}
+.lunbo_content > img{
+	height: 397px;
+	width: 280px;
+	float: left;
+	margin-right: 24px;
+}
+.left,.right{
+	width: 55px;
+    height: 93px;
+    background-color: gray;
+    color: white;
+    opacity: 0.8;
+    position: absolute;
+    top: 38%;
+}
+.right{
+	right: 0;
+}
+.left>img,.right>img{
+	float: left;
+    margin-left: 15px;
+    margin-top: 22px;
+}
+/*neirong*/
+.logo_up{
+	margin-top: 32px;
+    margin-bottom: 43px;
+}
+.logo_bottom{
+	margin-top: 26px;
+    margin-bottom: 32px;
+}
+.center_wrap{
+	width: 100%;
+}
+.center_img img:nth-child(1){
+	width: 218px;
+	height: 218px;
+}

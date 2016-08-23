@@ -1,0 +1,7 @@
+.content-personal{width: 174px;height: 574px;background-color: #F2F2F2; float: left;}
+.content-personal span{font-size: 1.8rem;display: block;width: 174px;height: 58px;border-bottom:2px solid #d3d3d3;text-align: center;line-height: 58px;}
+.content-personal ul{margin-left: 20px;}
+.content-personal ul li{padding: 9px 0px;}
+.content-personal ul li:nth-child(1),.content-personal ul li:nth-child(6),.content-personal ul li:nth-child(12){font-size: 1.6rem;font-family: "宋体";}
+.content-personal ul li a:hover{color: #ed7122;}
+.content-personal ul li a{font-size: 1.3rem;font-family:"宋体"}
