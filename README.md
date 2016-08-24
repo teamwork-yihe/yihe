@@ -1,6 +1,6 @@
 # 易和生活港
 
-[参考的项目链接](http://www.youhopelife.com/)
+[易和生活港原站地址](http://www.youhopelife.com/)
 
 
 参与人员：
