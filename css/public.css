@@ -7,7 +7,7 @@ html,
 body{
     min-width: 1180px;
     font: normal 16px Arial,Verana,"Microsoft Yahei",sans-serif;
-    background: #fff;
+    /* background: #fff; */
 }
 
 a{

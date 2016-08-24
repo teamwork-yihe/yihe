@@ -523,6 +523,31 @@ ul{
 	margin-right: 10px;
 }
 
+/*************公共部分footer*************start**********/
+.y-footer-wrap{width: 100%;}
+.y-f-top{width: 100%;background-color: #e2e2e2;overflow: hidden;}
+.y-footer-wrap .y-f-top .c{width: 1180px;margin: auto;}
+.y-f-top a {text-decoration: none;font-size: 24px; color:#666666;padding-left: 63px;}
+.y-f-top a:nth-child(1){padding-left: 0;}
+.y-f-center{width: 100%;}
+.y-f-center .c{width: 1180px;margin: auto;/*background-color: salmon;*/}
+.y_footer_logo{margin-bottom: 40px;}
+.y-twocode{display: inline-block;margin:30px 0px 0px 65px;}
+.y-twocode div{display: inline-block;margin: 0px 15px;}
+.y-twocode div:nth-child(3){width: 1px;height: 145px;background-color: #666666;}
+.y-twocode span{display: block;}
+.y-p1-ul{display: inline-block;margin-bottom:40px;}
+.y-p1-ul li{float: left;/*border:1px solid darkgoldenrod;*/}
+.y-p1-ul li h2{margin: 0px 20px;}
+.y-p1-ul li p{text-align: center;padding: 8px 0px;font-size: 13px;}
+.y-p1-weixin span{display: inline-block;margin-bottom: 40px;padding:0px 20px;}
+.y-p1-weixin span:nth-child(2){margin-left: 50px;}
+.y-f-buttom {text-align: center;border-top: 1px solid #d3d3d3;}
+.y-file-one{margin: 30px 0px 10px 0px ;}
+.y-file-two{margin-bottom: 30px;}
+.y-file-two span{color:#008de1;}
+/*************公共部分footer*************end************/
+
 /********* 自定义 radiobox 样式 *********/
 .rad{
     display: inline-block;
