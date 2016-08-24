@@ -353,8 +353,9 @@ select::-ms-expand { display:none;}
 .address-info-content{width: 945px;height: 32px;margin: auto;overflow: hidden;}
 .seven-div a{text-decoration: none;}
 .address-info-content div span{font-size: 12px;}
-.seven-div a {color: #008DE1;}
-#set-default{color:#ec6a17 ;}
+.seven-div a {color: #008DE1;    border-right: 2px solid #999;padding-right: 5px;}
+.seven-div a:nth-child(3){border-right: 0px;}
+.seven-div  .set-default{color:#ec6a17 ;}
 /*************地址管理************end****************/
 /*************添加新地址*********start***************/
 .address-wrap{width: 910px;height: 321px;/*border: 1px solid #D21026;*/margin: 60px 0px 148px 40px;}

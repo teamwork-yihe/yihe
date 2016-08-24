@@ -90,7 +90,7 @@ $(function() {
 	$(".eval-txt").bind('input propertychange', function() {
 		var ctn = $(".eval-txt").val().length; //获取字数
 		//		console.log($(".eval-txt").val().length);
-		var sn = 501 - ctn;
+		var sn = 500 - ctn;
 		//		console.log(sn);
 		$(".num-txt").text("还可以输入" + sn + "字");
 		if(ctn > 500) {
@@ -185,7 +185,8 @@ $(function() {
 										if (code === "6057") {
 //											alert("成功");
 											$("#binding-tbn").click(function() {
-												$(".bd-success").css("display","block");
+												//$(".bd-success").css("display","block");
+												popup("恭喜您绑定成功！");
 											})
 										} else{
 											alert("手机验证码不正确");
@@ -253,14 +254,6 @@ $(function() {
 		window.location.href = "../html/personeMessage.html";
 	})
 	
-//	jump.on("mousemove mouseenter mouseleave",function(){
-//		var i = $(this).index();
-//		console.log("xxx");
-//		jump.eq(i).children("a").click(function(){
-//			jump.find("a").removeClass("tt-orange");
-//			jump.eq(i).children("a").addClass("tt-orange");
-//		})
-//	})
 	/*******************左列表跳转**********end********************/
 	/******订单删除*****start*******/
 	$(".y-p2-see-detail span").click(function() {
@@ -277,5 +270,15 @@ $(function() {
 		},2000)
 	})
 	/******修改资料****end******/
+	// 地址管理
+	$(".addres-remove").click(function () {
+		var  adremove = $(this).parents(".address-info-content");
+		adremove.remove();
+	})
+	$(".set-default").click(function() {
+		$(".set-default").text("设为默认");
+		$(this).empty();
+//		$(this).siblings().text("设为默认");
+	})
 	
 })

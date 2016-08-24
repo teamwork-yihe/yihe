@@ -9,6 +9,10 @@ body {
 	background-color: rgb(239, 239, 239);
 }
 
+button{
+	outline: none;
+}
+
 a {
 	text-decoration: none;
 	color: #666;
@@ -204,6 +208,7 @@ ul{
 	text-align: center;
 	background-color: rgb(249, 249, 249);
 	margin-left: 24px;
+	cursor: pointer;
 }
 
 .inp_right {

@@ -364,6 +364,11 @@ function popup(str){
     },3000,function(){
 	info.remove();
     });
+    /*
+   info.animate({
+   	"opacity": 0
+   });
+   */
 }
 
 $(function(){
@@ -416,12 +421,23 @@ $(function(){
 	location.href = "homepage.html";
     });
     // “我的易和”按钮
-    $(document).on("click","#geren_left",function(){
-	location.href = "error.html";
+    $(document).on("click",".inp_center",function(){
+	location.href = "personeAccount.html";
     });
     // “购物车”按钮
-    $(document).on("click","#geren_right",function(){
-	location.href = "error.html";
+    $(document).on("click",".inp_right",function(){
+	location.href = "cart_index.html";
     });
+    //footer 正品保证
+    $(".y-f-top .c a").click(function() {
+    		location.href = "zhengpin07.html";
+    })
+    //回到首页
+    $(".search_2 a").click(function () {
+    		location.href = "homepage.html";
+    })
+    
+    
 });
+	
 

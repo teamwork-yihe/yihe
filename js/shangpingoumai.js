@@ -146,3 +146,6 @@ $(".go_buy").click(function() {
 	$(".tanchuang").css("display", "none");
 	$(".tanchuang_kuang").css("display", "none");
 })
+$(document).on("click",".look_car",function(){
+	location.href = "cart_index.html";
+    });

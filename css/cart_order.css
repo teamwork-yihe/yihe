@@ -13,6 +13,7 @@
 .cart-info{
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
+    overflow: hidden;
 }
 
 .info-box{
@@ -122,6 +123,10 @@
 
 .place-info-popup .btn-box .close-btn{
     background: #aaa;
+}
+
+.place-info{
+	clear: both;
 }
 
 .place-info .title{
