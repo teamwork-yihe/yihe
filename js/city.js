@@ -1,4 +1,6 @@
 $(function(){
+    console.log(document.referrer);
+
     // 添加最近访问的城市
     var recentCities = places.recent;
     for(var i = 0; i < recentCities.length; i++) {
@@ -40,16 +42,19 @@ $(function(){
     $(document).on("click",".city",function(){
 	localStorage.setItem("yihe_cityname",$(this).html());
 	setCurrentCity();
+	location.href = document.referrer;
     });
 
     $(document).on("click",".hot-city",function(){
 	localStorage.setItem("yihe_cityname",$(this).html());
 	setCurrentCity();
+	location.href = document.referrer;
     });
 
     $(document).on("click",".rec-city",function(){
 	localStorage.setItem("yihe_cityname",$(this).html());
 	setCurrentCity();
+	location.href = document.referrer;
     });
 
 });
