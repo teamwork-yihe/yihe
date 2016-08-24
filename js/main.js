@@ -204,7 +204,7 @@ $(function() {
 				}
 			})	
 		} else{
-			alert("手机号输入不确定,请重新输入");
+			alert("手机号输入不正确,请重新输入");
 		}
 	})
 	/********************绑定手机号**********end*********************************/
@@ -220,7 +220,62 @@ $(function() {
 			}
 		})
 	/********************收藏页面***********end********************************/
+	/*******************左列表跳转**********start*******************/
+	var jump = $(".y-content-personal").find("li");
+	jump.eq(1).children("a").click(function() {
+		window.location.href = "../html/personeAccount.html";
+	})
+	jump.eq(2).children("a").click(function() {
+		window.location.href = "../html/personeOrder.html";
+	})
+	jump.eq(3).children("a").click(function() {
+		window.location.href = "../html/personeIntegral.html";
+	})
+	jump.eq(4).children("a").click(function() {
+		window.location.href = "../html/personeTicket.html";
+	})
+	jump.eq(6).children("a").click(function() {
+		window.location.href = "../html/personeMeans.html";
+	})
+	jump.eq(7).children("a").click(function() {
+		window.location.href = "../html/personeAddress.html";
+	})
+	jump.eq(8).children("a").click(function() {
+		window.location.href = "../html/personeCollect.html";
+	})
+	jump.eq(9).children("a").click(function() {
+		window.location.href = "../html/personeBrowse.html";
+	})
+	jump.eq(10).children("a").click(function() {
+		window.location.href = "../html/personePassword.html";
+	})
+	jump.eq(12).children("a").click(function() {
+		window.location.href = "../html/personeMessage.html";
+	})
 	
-	
+//	jump.on("mousemove mouseenter mouseleave",function(){
+//		var i = $(this).index();
+//		console.log("xxx");
+//		jump.eq(i).children("a").click(function(){
+//			jump.find("a").removeClass("tt-orange");
+//			jump.eq(i).children("a").addClass("tt-orange");
+//		})
+//	})
+	/*******************左列表跳转**********end********************/
+	/******订单删除*****start*******/
+	$(".y-p2-see-detail span").click(function() {
+		var jiedian = $(this).parents('.y-order-content');
+		jiedian.remove();
+	})
+	/******订单删除*****end*******/
+	/******修改资料****start******/
+	$("#sub-btn").click(function() {
+		console.log("xxx");
+		$(".item-right div").fadeIn(500);
+		setTimeout(function() {
+			$(".item-right div").fadeOut(500);
+		},2000)
+	})
+	/******修改资料****end******/
 	
 })
