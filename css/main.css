@@ -106,9 +106,9 @@ html,body{width: 100%;height: 100%;background-color: #f2f2f2;}
 /*************充值支付**************end***************/
 
 /*************公共部分footer*************start**********/
-.y-footer-wrap{width: 100%;}
+/*.y-footer-wrap{width: 100%;}*/
 .y-f-top{width: 100%;background-color: #e2e2e2;overflow: hidden;}
-.y-footer-wrap .y-f-top .c{width: 1180px;margin: auto;}
+.y-footer-wrap .y-f-top .c{width: 1180px;margin:0 auto;}
 .y-f-top a {text-decoration: none;font-size: 24px; color:#666666;padding-left: 63px;}
 .y-f-top a:nth-child(1){padding-left: 0;}
 .y-f-center{width: 100%;}
@@ -146,7 +146,7 @@ html,body{width: 100%;height: 100%;background-color: #f2f2f2;}
 .y-p2-content-account{width: 985px;border: 1px solid #D3D3D3;float: right;margin-bottom: 40px;}
 .y-order-title{width: 985px; height: 59px;line-height: 59px;border-bottom: 1px solid #CCCCCC;}
 .y-order-title span{font-size: 18px;color:#80c6f0;margin-left: 20px;}
-.y-order-nav li{float: left;text-align: center;padding: 0px 12px;font-size: 14px;margin: 0px 20px;}
+.y-order-nav li{float: left;text-align: center;padding: 0px 12px;font-size: 14px;margin: 0px 19.9px;}
 .y-order-nav{margin:19px 10px 60px 10px;}
 .y-order-nav li:hover{background-color:#FFE3D3;}
 .y-order-nav li a{text-decoration: none;}
@@ -167,9 +167,9 @@ html,body{width: 100%;height: 100%;background-color: #f2f2f2;}
 .p2-order-type span:nth-child(2){display: inline-block;}
 /*.p2-unit-price{margin-left: 40px;}*/
 .y-p2-total-money{width: 155px;/*background-color: #000000;*/text-align: center;}
-.y-p2-see-detail{width: 155px;/*background-color: darkgoldenrod;*/text-align: center;}
-.y-p2-see-detail span{padding: 4px 12px;background-color: #ffe3d1;border-radius: 4px;color: #ff6c00;cursor: pointer;}
-.y-p2-see-detail a{color:#008de1}
+.y-p2-see-detail,.y-pticket-see-detail{width: 155px;/*background-color: darkgoldenrod;*/text-align: center;}
+.y-p2-see-detail span,.y-pticket-see-detail span{padding: 4px 12px;background-color: #ffe3d1;border-radius: 4px;color: #ff6c00;cursor: pointer;}
+.y-p2-see-detail a,.y-pticket-see-detail a{color:#008de1}
 /********************下一页底部wrap*****start*********/
 .y-p2-nenxtpage-wrap{width:860px;/*height:20px;*//*border: 1px solid darkgoldenrod;*/margin: 40px auto;}
 .y-p2-nenxtpage-wrap span{cursor: default;line-height:32px;border: 1px solid #BBBBBB;font-size: 16px;display: inline-block;width:37px;text-align: center;}
@@ -257,10 +257,11 @@ html,body{width: 100%;height: 100%;background-color: #f2f2f2;}
 /*.eval-ul li span:nth-child(2){margin-left: 11px;}*/
 .a-wrap{margin: 20px 0px 40px 0px;}
 .eval-txt{width: 694px;height: 258px;border: 1px solid #D3D3D3;padding: 15px 15px 30px 15px;box-sizing: border-box;font-size: 16px;line-height: 20px;}
-.eval-a{margin-left: 10px;display:inline-block; width:60px; height:60px; background:url(../images/file-img.png) no-repeat; position:relative; overflow:hidden;}
+.eval-a{margin-left: 10px;display:inline-block; width:60px; height:60px; position:relative; overflow:hidden;}
+.eval-a img{position: absolute;}
 .a-wrap a:nth-child(1){margin-left: 0px;}
 /*.eval-a:hover{background:green;}*/
-.eval-a input{width: 60px;height: 60px;;position:absolute; right:0; top:0; font-size:100px; /*opacity:0;*//* filter:alpha(opacity=0.8);*/}
+.eval-a input{width: 60px;height: 60px;;position:absolute; right:0; top:0; font-size:300px; /*opacity:0;*//* filter:alpha(opacity=0.8);*/}
 .eva-fabiao{font-size: 18px;;width: 170px;height: 45px;line-height: 45px;text-align: center;color: white;border-radius: 4px;background-color: #EC6A17;margin-bottom: 40px;}
 .num-txt{position: absolute;top:400px;right:20px;font-size: 12px;color: #999999;}
 #shangpin,#fuwu,#miaoshu{display: inline-block;margin-left: 5px;}
@@ -304,15 +305,14 @@ html,body{width: 100%;height: 100%;background-color: #f2f2f2;}
 .radio-btn{height: 25px;width: 25px;}
 #change-phone{color: #008DE1;margin-left: 21px;}
 .item-right span{font-size: 16px;}
-.select1{border-radius: 0px;font-size:16px;width: 110px;height: 35px;border: solid 1px #D3D3D3;appearance:none; -moz-appearance:none; -webkit-appearance:none;background-size: 100% 100%;
-background: url("../images/sanjiao.png") no-repeat scroll right center; padding-right: 14px;}
-#sub-btn,.bt-it{width: 176px;height: 46px;background-color: #EC6A17;font-size: 18px;color: white;border-radius: 6px;margin-left: 123px;}
+.select1{border-radius: 0px;font-size:16px;width: 110px;height: 35px;border: solid 1px #D3D3D3;appearance:none; -moz-appearance:none; -webkit-appearance:none;background-size: 100% 100%;background: url("../images/sanjiao.png") no-repeat scroll right center; padding-right: 14px;}
+#sub-btn,.bt-it,.bt-it-two{width: 176px;height: 46px;background-color: #EC6A17;font-size: 18px;color: white;border-radius: 6px;margin-left: 123px;}
 select::-ms-expand { display:none;}
 /*************个人资料************end******************/
 /*************换绑手机page1*******start****************/
 .verification-bg1,.verification-bg2,.verification-bg3,.verification-bg4,.verification-bg5,.verification-bg6,.verification-bg7{float: left;}
-.verification-bg1,.verification-bg7{width: 212px;height: 38px;background-color:#EC6A17 ;display: inline-block;}
-.verification-bg2{display:inline-block;width:0px;height:0;border-width:19px 0px 19px 24px;border-style:solid;border-color:transparent transparent transparent #EC6A17;}
+.verification-bg1,.verification-bg7{width: 212px;height: 38px;background-color:#E5E5E5 ;display: inline-block;}
+.verification-bg2{display:inline-block;width:0px;height:0;border-width:19px 0px 19px 24px;border-style:solid;border-color:transparent transparent transparent #E5E5E5;}
 .verification-bg3,.verification-bg6{display: inline-block;width:0px;height:0;border-width:19px 0px 19px 24px;border-style:solid;margin-left: -15px;}
 .verification-bg3{border-color:#E5E5E5 transparent #E5E5E5 transparent;}
 .verification-bg4{width: 188px;height: 38px;background-color:#E5E5E5 ;display: inline-block;}
@@ -326,9 +326,9 @@ select::-ms-expand { display:none;}
 #ip-code-wrap img{margin-left: 20px;}
 #ip-code-wrap span{font-size: 18px;margin-left: 10px;color: #EC6A17;}
 .sp-it{display: inline-block;width: 100px;line-height: 32px;background-color:#008DE1;font-size: 14px;color: white;text-align: center;position: relative;left: -110px;top: 12px;}
-.bt-it{margin-left: 0px;margin-top: 20px;}
+.bt-it,.bt-it-two{margin-left: 0px;margin-top: 20px;}
 .one-step,.two-step,.three-step{font-size: 18px;top: 7px;}
-.one-step{position: relative;left: -630px;color: white;}
+.one-step{position: relative;left: -630px;}
 .two-step{position: relative;left: -530px;}
 .three-step{position: relative;left: -150px;top: -20px;}
 /*************换绑手机page1*******end****************/
@@ -420,3 +420,16 @@ select::-ms-expand { display:none;}
 .mesdetail-wrap p{text-align: center;font-size: 18px;color:#008DE1;margin: 40px 0px;}
 .mesdetail-wrap span{font-size: 14px;color: #666666;line-height: 30px;}
 /***********消息详情*******end**********/
+
+/********* 全局弹出信息样式 *********/
+.public-info{
+    position: fixed;
+    padding: 0 40px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 10;
+}

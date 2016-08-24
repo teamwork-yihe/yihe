@@ -21,16 +21,12 @@ $(function() {
 			if ($("#sheng ul").css("display") == 'block') {
 				$(document).click(function() {
 					console.log("xxx");
-					alert("1")
 					$("#sheng ul").hide();
 				})
 			}
 		})
 
 	})
-	
-
-
 	var beijing = function() {
 		$("#beijing li").click(function() {
 			$("#beijing").css("display", "none");
@@ -84,7 +80,7 @@ $(function() {
 		var n = $(this).index();
 		for(var i = 0; i <= n; i++) {
 			$("#miaoshu span").eq(i).css("color", "red");
-			//			console.log($("#miaoshu span").eq(i));
+			//	console.log($("#miaoshu span").eq(i));
 		}
 	})
 	$(".eval-txt").bind('input propertychange', function() {
@@ -120,19 +116,17 @@ $(function() {
 		var min = myDate.getMinutes();
 		var sec = myDate.getSeconds();
 		var timer = yea + "-" + mon + "-" + dte + " " + hou + ":" + min + ":" + sec;
-//		if($("#recharge-txt").val() != "" && isNaN($("#recharge-txt").val()) == false) {
-//			console.log($("#recharge-txt").val());
+		if($("#recharge-txt").val() != "" && isNaN($("#recharge-txt").val()) == false){
 			var newli = $("<li class='address-info-content newul' id='recharge-wrap'><div class='re-one newTime'><span></span></div><div class='re-two' id='re-order-num'><span>41347943297567</span></div><div class='re-three newjine' id='re-order-num'><span></span></div><div  class='newzong'  id='re-four'><span>2</span></div><li>");
 			newli.children(".newTime").find("span").text(timer);
 		 	newli.children(".newjine").find("span").text("¥"+ " " +$("#recharge-txt").val());
 		 	
 		 	newli.prependTo('.address-info-wrap');
-//		}
+		}
 		/***************充值end********充值end*****充值end********充值end***********/
 
 	})
 	/*********************个人地址************start********************************/
-	
 //	个人地址
 	var namethree;
 	$("#shouhuo-name").blur(function(){
@@ -146,7 +140,6 @@ $(function() {
 		newadress.prependTo($(".address-info-wrap"));
 		$('#name-three').html(namethree);
 	})
-	
 	$(".add-newadsbtn").click(function() {
 		window.location.href = "../html/addAddress.html";
 	})	
@@ -156,15 +149,11 @@ $(function() {
 	$("#y-new-address").click(function() {
 		window.location.href = "../html/addAddress.html";
 	})
-//	$("#y-new-address").click(function() {
-//		window.location.href = "../html/addAddress.html";
-//	})
-	
 	/*********************个人地址************end********************************/
 	/********************绑定手机号**********start*********************************/
+	var E = /^[1][358][0-9]{9}$/;//验证手机表达式
 	$("#iphone-a").blur(function() {
 		var a = $("#iphone-a").val();
-		var E = /^[1][358][0-9]{9}$/;
 		if(E.test(a)){
 //			alert("成功");
 			$("#iphone-b").blur(function(){
@@ -185,8 +174,10 @@ $(function() {
 										if (code === "6057") {
 //											alert("成功");
 											$("#binding-tbn").click(function() {
-												//$(".bd-success").css("display","block");
 												popup("恭喜您绑定成功！");
+											})
+											$("#pas-btn").click(function() {
+												popup("恭喜您修改密码成功！");
 											})
 										} else{
 											alert("手机验证码不正确");
@@ -210,16 +201,18 @@ $(function() {
 	})
 	/********************绑定手机号**********end*********************************/
 	/********************收藏页面***********start********************************/
-		$(".aaa").click(function() {
-//			console.log("XXxx");
+	function coll(a) {
+		$(a).click(function() {
 			$(this).toggleClass("collbbb");
 			if ($(this).text() == "收藏") {
 				$(this).text("取消收藏");
-//				alert("xxxx");
 			}else{
 				$(this).text("收藏"); 
 			}
 		})
+	}
+	coll(".aaa");
+	coll(".bro");
 	/********************收藏页面***********end********************************/
 	/*******************左列表跳转**********start*******************/
 	var jump = $(".y-content-personal").find("li");
@@ -253,7 +246,6 @@ $(function() {
 	jump.eq(12).children("a").click(function() {
 		window.location.href = "../html/personeMessage.html";
 	})
-	
 	/*******************左列表跳转**********end********************/
 	/******订单删除*****start*******/
 	$(".y-p2-see-detail span").click(function() {
@@ -263,7 +255,6 @@ $(function() {
 	/******订单删除*****end*******/
 	/******修改资料****start******/
 	$("#sub-btn").click(function() {
-		console.log("xxx");
 		$(".item-right div").fadeIn(500);
 		setTimeout(function() {
 			$(".item-right div").fadeOut(500);
@@ -271,14 +262,55 @@ $(function() {
 	})
 	/******修改资料****end******/
 	// 地址管理
-	$(".addres-remove").click(function () {
-		var  adremove = $(this).parents(".address-info-content");
-		adremove.remove();
-	})
+	function removeAdr(select) {
+		 $(select).click(function () {
+			var adremove = $(this).parents(".address-info-content");
+			adremove.remove();
+		})
+	}
+	removeAdr(".addres-remove");
+	removeAdr(".message-remove");
 	$(".set-default").click(function() {
 		$(".set-default").text("设为默认");
 		$(this).empty();
-//		$(this).siblings().text("设为默认");
 	})
+	//换绑手机
+	var phNum = false;
+	var yzm = false;
+	var pYzm = false;
+	$(".phone-num").blur(function() {
+		if(E.test($(".phone-num").val())){
+			$(".ip-it").blur(function(){
+				if($(".ip-it").val() === "xqcr"){
+					$(".phone-verification").blur(function() {
+						if($(".phone-verification").val() === "5067"){
+							pYzm = true;
+						} else{
+							alert("验证码有误");
+						}
+					})
+					yzm = true;
+				} else{
+					alert("验证码有误");
+				}
+			})
+			phNum = true;
+		} else{
+			alert("手机号输入有误");
+		}
+	})
+	function attPhone(a,b) {
+		$(a).click(function() {
+			if(phNum == true && yzm == true && pYzm == true ){
+				location.href = b;
+			} else{
+				alert("验证失败 , 请补全以上信息!");
+			}
+		})
+	}
+	attPhone(".bt-it","../html/bindingPhonePage2.html");
+	attPhone(".bt-it-two","../html/bindingPhonePage3.html")
+	
+	
 	
 })
