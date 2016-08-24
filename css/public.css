@@ -14,30 +14,6 @@ a{
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
-}
-
-.left{
-    float: left;
-}
-
-.right{
-    float: right;
-}
-
-.red{
-    color: #f00;
-}
-
-.orange{
-    color: #f84;
-}
-
-.blue{
-    color: #09e;
-}
-
 /********* header *********/
 .header{
     height: 170px;
@@ -138,68 +114,4 @@ ul{
 
 .footer-cont{
     padding-top: 60px;
-}
-
-
-/********* 自定义 radiobox 样式 *********/
-.rad{
-    display: inline-block;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
-}
-
-.rad div{
-    position: absolute;
-    margin: 1px;
-    width: 14px;
-    height: 14px;
-    border: 2px solid #018de2;
-    border-radius: 50%;
-    background: #fff;
-}
-
-.rad[checked='checked']{
-    background: #018de2;
-}
-
-.rad[checked='checked'] div{
-    border: 2px solid #fff;
-    background: #018de2;
-}
-
-/********* 自定义 checkbox 样式 *********/
-.che{
-    display: inline-block;
-    position: relative;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #ccc;
-}
-
-.che div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    background: transparent;
-}
-
-.che[checked="checked"] div{
-    background: #018de2;
-}
-
-/********* 全局弹出信息样式 *********/
-.public-info{
-    position: fixed;
-    padding: 0 20px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #444;
-    color: #fff;
-    border-radius: 10px;
-    z-index: 10;
 }

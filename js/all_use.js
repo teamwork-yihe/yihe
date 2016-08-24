@@ -1,12 +1,3 @@
-//nav
-var lis = 0;
-$("#use_message ul li").mousemove(function() {
-	lis = $("#use_message ul li").index(this);
-	$("#use_message ul li a").css("color", "#666");
-	$("#use_message ul li a").eq(lis).css("color", "orange");
-}).mouseout(function() {
-	$("#use_message ul li a").css("color", "#666");
-});
 //按钮保持原样及移入移出
 $(".search_up input").eq(1).attr("abc", "xyz");
 $(".search_up input").click(function() {
@@ -85,7 +76,7 @@ function showImg(index) {
 	$(".num li").removeClass("on")
 		.eq(index).addClass("on");
 }
-//		
+//
 $(".change_center ul li").not(".five").mousemove(function() {
 	$(".change_center ul li").not(".five").css("background-color", "white");
 	$(".change_center ul li").not(".five").css("color", "black");

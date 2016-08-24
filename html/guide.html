@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <title>易和生活港|欢迎页</title>
+	<link rel="stylesheet" type="text/css" href="../css/all_use.css" />
 	<link rel="stylesheet" type="text/css" href="../css/public.css" />
 	<link rel="stylesheet" type="text/css" href="../css/guide.css" />
     </head>
@@ -36,28 +37,6 @@
 		<div class="place-btn" val="郑州">进入易和</div>
 	    </div>
 
-	    <!-- 使用这个JTemplate插件和在JS中向DOM插入节点性质一样，后者的代码也写在了JS中，已经注释 -->
-	    <p style="display:none;"><textarea id="hot-tpl"><!--
-
-			{#foreach $T as cityname}
-		<li>{$T.cityname}</li>
-			{#/for}
-	     -->
-	    </textarea></p>
-
-	    <p style="display:none;"><textarea id="cities-tpl"><!--
-		    {#foreach $T as city}
-		<li>
-		    <div class="first-letter">{$T.city.firstletter}</div>
-		    {#param name=length value=$T.city.cities.length}
-		    {#for index = 0 to $P.length-1}
-		    <div class="city">{$T.city.cities[$T.index].name}</div>
-		    {#/for}
-		</li>
-		    {#/for}
-	     -->
-	    </textarea></p>
-
 	    <div class="place-list">
 		<div class="hot">
 		    <span>热门城市：</span>
@@ -76,7 +55,6 @@
 	</div>
     </body>
     <script src="../js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="../js/jquery-jtemplates.min.js"></script>
     <script type="text/javascript" src="../js/public.js"></script>
     <script type="text/javascript" src="../js/guide.js"></script>
 </html>
