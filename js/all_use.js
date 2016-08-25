@@ -76,13 +76,124 @@ function showImg(index) {
 	$(".num li").removeClass("on")
 		.eq(index).addClass("on");
 }
-//
-$(".change_center ul li").not(".five").mousemove(function() {
-	$(".change_center ul li").not(".five").css("background-color", "white");
-	$(".change_center ul li").not(".five").css("color", "black");
-	$(this).css("background-color", "rgb(0, 141, 225)");
-	$(this).css("color", "white");
+//分页点击及效果
+var click_is = 0;
+$(".change_center ul li").click(function() {
+//	$(".change_center ul li").css({"background-color":"white","color":"black"});
+//	$(this).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+	
+	console.log(click_is);
+	click_is =$(".change_center ul li").index(this);
+	var which_is = $(".change_center ul li");
+	if (click_is==0) {		
+		if (which_is.eq(1).text()!=1) {
+			which_is.eq(1).text(parseInt(which_is.eq(1).text())-1);
+			which_is.eq(2).text(parseInt(which_is.eq(2).text())-1);
+			which_is.eq(3).text(parseInt(which_is.eq(3).text())-1);
+			which_is.eq(7).css({"background-color":"white","color":"black"});
+		}
+	}	
+	if (click_is==1) {
+		if ($(this).text()!=1) {
+			which_is.eq(1).text(parseInt(which_is.eq(1).text())-1);
+			which_is.eq(2).text(parseInt(which_is.eq(2).text())-1);
+			which_is.eq(3).text(parseInt(which_is.eq(3).text())-1);
+			which_is.css({"background-color":"white","color":"black"});
+		}else{
+			which_is.css({"background-color":"white","color":"black"});
+		}
+	}
+	if (click_is==2) {
+		if (which_is.eq(1).text()=="...") {
+			which_is.eq(1).empty();
+			which_is.eq(1).text(53);
+			which_is.eq(2).text(54);
+			which_is.eq(3).text(55);
+			which_is.eq(4).text("...");
+			which_is.css({"background-color":"white","color":"black"});
+		}else {
+			which_is.css({"background-color":"white","color":"black"});		
+		}
+	}
+	if (click_is==3) {
+		if (which_is.eq(3).text()==55) {
+			which_is.eq(1).empty();
+			which_is.eq(1).text("...");
+			which_is.eq(2).text(55);
+			which_is.eq(3).text(56);
+			which_is.eq(4).text(57);
+			which_is.css({"background-color":"white","color":"black"});
+		}else if (which_is.eq(3).text()>55){
+			which_is.css({"background-color":"white","color":"black"});
+		}else if (which_is.eq(3).text()<55){
+			which_is.eq(1).text(parseInt(which_is.eq(1).text())+1);
+			which_is.eq(2).text(parseInt(which_is.eq(2).text())+1);
+			which_is.eq(3).text(parseInt(which_is.eq(3).text())+1);
+			which_is.css({"background-color":"white","color":"black"});
+		}
+	}
+	if (click_is==4||click_is==5||click_is==6) {
+			which_is.css({"background-color":"white","color":"black"});
+	}
+	if (click_is==7) {		
+		if (which_is.eq(3).text()<=54) {
+			which_is.eq(1).text(parseInt(which_is.eq(1).text())+1);
+			which_is.eq(2).text(parseInt(which_is.eq(2).text())+1);
+			which_is.eq(3).text(parseInt(which_is.eq(3).text())+1);
+			which_is.eq(0).css({"background-color":"white","color":"black"});		
+		}else if (which_is.eq(3).text()==55) {
+			which_is.eq(1).empty();
+			which_is.eq(1).text("...");
+			which_is.eq(2).text(55);
+			which_is.eq(3).text(56);
+			which_is.eq(4).text(57);
+		}
+	}
+		$(this).css({"background-color":"rgb(0, 141, 225)","color":"white"});
 });
+//调页
+$("#sure").on("click",function  () {
+	var which_is = $(".change_center ul li");
+	which_is.css({"background-color":"white","color":"black"});
+	console.log($(".changes").val());
+	var num= parseInt($(".changes").val());	
+		if (num<0) {
+			alert("太小!看不到")
+		}else if (num==1) {
+			which_is.eq(1).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+		}else if (num==2) {
+			which_is.eq(2).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+		}else if (num==3) {
+			which_is.eq(3).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+		}else if (num>3&&num<=55) {
+			which_is.eq(1).text(num-1);
+			which_is.eq(2).text(num);
+			which_is.eq(3).text(num+1);
+			which_is.eq(2).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+		}else if (num==56) {
+			which_is.eq(1).empty();
+			which_is.eq(1).text("...");
+			which_is.eq(2).text(55);
+			which_is.eq(3).text(56);
+			which_is.eq(4).text(57);
+			which_is.eq(3).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+		}else if (num==57) {
+			which_is.eq(1).empty();
+			which_is.eq(1).text("...");
+			which_is.eq(2).text(55);
+			which_is.eq(3).text(56);
+			which_is.eq(4).text(57);
+			which_is.eq(4).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+		}else if (num==58) {
+			which_is.eq(5).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+		}else if (num==59) {
+			which_is.eq(6).css({"background-color":"rgb(0, 141, 225)","color":"white"});
+		}else if (num>59) {
+			alert("对不起,没那么大滴!")
+		}else {
+		alert("请输入数字!")
+	}
+})
 
 //二级菜单
 $(".search_nav div").eq(0).mouseover(function() {
