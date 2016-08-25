@@ -1,3 +1,16 @@
+function randoms (m,n) {
+	return Math.floor(Math.random()*(n-m+1)+m);
+}
+$("input").mouseenter(function  () {
+	var r = randoms(0,255);
+	var g = randoms(0,255);
+	var b = randoms(0,255);
+	var nus = randoms(1,20);
+	console.log($(this).width());
+	$(this).css("box-shadow","0 0 "+nus+"px rgb("+r+","+g+","+b+")");
+}).mouseleave(function  () {
+	$(this).css("box-shadow","none");
+})
 //按钮保持原样及移入移出
 var eqs=0;
 $(".search_up input").eq(1).attr("abc", "xyz");
@@ -24,7 +37,7 @@ $(document).on("mouseover",".search_footer a",function() {
 $(".search_nav div a").not(".search_f").mouseenter(function() {
 		if($(this).attr("change") == "undefined" || typeof($(this).attr("change")) == "undefined") {
 			$(this).css("color", "rgb(255, 108, 0)");
-			console.log("11111");
+//			console.log("11111");
 		}
 	}).mouseleave(function() {
 		if($(this).attr("change") == "undefined" || typeof($(this).attr("change")) == "undefined") {
