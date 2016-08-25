@@ -16,11 +16,10 @@ $(".search_up input").click(function() {
 	}
 });
 
-$(".search_footer div a").mousemove(function() {
+$(document).on("mouseover",".search_footer a",function() {
 	$(".search_footer div a").css("color", "black");
 	$(this).css("color", "rgb(255, 108, 0)");
-
-})
+});
 //导航循环变色
 $(".search_nav div a").not(".search_f").mouseenter(function() {
 		if($(this).attr("change") == "undefined" || typeof($(this).attr("change")) == "undefined") {
