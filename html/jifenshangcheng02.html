@@ -323,6 +323,8 @@
 	<script src="../js/all_use.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$(".search_nav>div>a").removeAttr("change");
+			$(".search_nav>div>a").eq(4).attr("change", "changes");
 			for(var i = 0; i < 20; i++) {
 				var div = '<div class="center_img"><a href="shangpin11.html"><img src="../images/shouye/shop_a1.png"/></a><img src="../images/shouye/shang_wenzi.png"/><img src="../images/shouye/shop_jifen.png"/><input type="button" class="duihuan" id="" value="兑换" /></div>';
 				$(".d_content").append(div);

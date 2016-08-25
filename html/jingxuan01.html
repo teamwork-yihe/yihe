@@ -289,6 +289,8 @@
 	<script src="../js/all_use.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$(".search_nav>div>a").removeAttr("change");
+			$(".search_nav>div>a").eq(2).attr("change", "changes");
 			for(var i = 0; i < 40; i++) {
 				var div = '<div class="center_img"><a href="shangpin11.html"><img src="../images/shouye/shop_car.png" style="width: 100%;"/></a><div class="center_img_p"><img src="../images/shouye/shop_car_r.gif"/><span>李杰</span></div><div class="center_img_p"><img src="../images/shouye/shop_car_p.gif"/><span>18699563265</span></div><div class="center_img_p"><img src="../images/shouye/shop_car_d.gif"/><span>浙江省台州市温岭市人民路281号</span></div></div>';
 				$(".d_content").append(div);

@@ -309,5 +309,10 @@
 	<script src="../js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/all_use.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/shangpingoumai.js" type="text/javascript" charset="utf-8"></script>
-
+	<script type="text/javascript">
+			$(document).ready(function  () {
+				$(".search_nav>div>a").removeAttr("change");
+			    $(".search_nav>div>a").eq(5).attr("change", "changes");
+			})
+	</script>
 </html>

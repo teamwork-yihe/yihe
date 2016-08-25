@@ -1,4 +1,6 @@
 $(function(){
+	$(".search_nav>div>a").removeAttr("change");
+	$(".search_nav>div>a").eq(1).attr("change", "changes");
     // 每一项的图形滑动
     $(document).on("mouseover",".common .titles li",function(i,v){
 	var li = $(this);

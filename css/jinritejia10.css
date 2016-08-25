@@ -2,6 +2,9 @@
 .search_nav>div:nth-child(4) a {
 	color: rgb(255, 108, 0);
 }
+.search_nav>div:nth-child(5) a {
+	color: black;
+}
 .d_all{
 	border: 1px;
 	width: 1180px;

@@ -10,8 +10,7 @@ $(".search_footer div a").mousemove(function() {
 	$(this).css("color", "rgb(255, 108, 0)");
 
 })
-
-$(".search_nav>div>a").eq(5).attr("change", "changes");
+//导航循环变色
 $(".search_nav div a").not(".search_f").mouseenter(function() {
 		if($(this).attr("change") == "undefined" || typeof($(this).attr("change")) == "undefined") {
 			$(this).css("color", "rgb(255, 108, 0)");

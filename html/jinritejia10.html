@@ -336,6 +336,8 @@
 	<script src="../js/shangpingoumai.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$(".search_nav>div>a").removeAttr("change");
+			$(".search_nav>div>a").eq(3).attr("change", "changes");
 			var n = 0;
 			var m = 0;
 			for(var i = 0; i < 20; i++) {
