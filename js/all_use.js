@@ -1,8 +1,19 @@
 //按钮保持原样及移入移出
+var eqs=0;
 $(".search_up input").eq(1).attr("abc", "xyz");
 $(".search_up input").click(function() {
+	eqs = $(".search_up input").index(this);
 	$(".search_up input").attr("abc", "xyz");
 	$(this).removeAttr("abc", "xyz");
+	var eqs0='<div class="search_foot">热门：</div><div class="search_foot1"><a href="hangye08.html">酒店</a></div><div class="search_foot2"><a href="hangye08.html">洗车</a></div><div class="search_foot3"><a href="hangye08.html">餐饮</a></div><div class="search_foot4"><a href="hangye08.html">进口</a></div>';
+	var eqs1='<div class="search_foot">热门：</div><div class="search_foot1"><a href="hangye08.html">万和</a></div><div class="search_foot2"><a href="hangye08.html">京东</a></div><div class="search_foot3"><a href="hangye08.html">淘宝</a></div><div class="search_foot4"><a href="hangye08.html">糯米</a></div><div class="search_foot5"><a href="hangye08.html">腾讯</a></div><div class="search_foot6"><a href="hangye08.html">有道</a></div>';
+	if (eqs==0) {
+		$(".search_footer").empty();
+		$(".search_footer").append(eqs0);
+	}else if (eqs==1) {
+		$(".search_footer").empty();
+		$(".search_footer").append(eqs1);
+	}
 });
 
 $(".search_footer div a").mousemove(function() {
@@ -583,6 +594,10 @@ $(function(){
     })
     //回到首页
     $(".search_2 a").click(function () {
+    		location.href = "homepage.html";
+    })
+    //翻页回到首页
+    $("#index").click(function () {
     		location.href = "homepage.html";
     })
 
