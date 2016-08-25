@@ -1,70 +1,75 @@
 $(function() {
 	/********新添加收货地址*******/
-	$(".sheng-wrap img").click(function() {
-		$("#sheng ul").css("display", "block");
-		$("#sheng ul li").click(function() {
-			console.log($(this).html());
-			$("#sheng ul").css("display", "none");
-			$("#sheng span").html($(this).html());
-			if($(this).html() === "北京") {
-				$("#city img").click(function() {
-					$("#beijing").css("display", "block");
-					beijing();
-				})
-			}
-			if($(this).html() === "河南") {
-				$(".city-wrap img").click(function() {
-					$("#henan").css("display", "block");
-					henan();
-				})
-			}
-			if ($("#sheng ul").css("display") == 'block') {
-				$(document).click(function() {
-					console.log("xxx");
-					$("#sheng ul").hide();
-				})
-			}
-		})
-
+	$("#one-sanjiao").click(function() {
+		$("#sheng-one").css("display","block");
 	})
-	var beijing = function() {
-		$("#beijing li").click(function() {
-			$("#beijing").css("display", "none");
-			$("#city span").html($(this).html());
-			if($(this).html() === "北京") {
-				$("#area img").click(function() {
-					$("#beijingqu").css("display", "block");
-					$("#beijingqu li").click(function() {
-						$("#area span").html($(this).html());
-						$("#beijingqu").css("display", "none");
-					})
-				})
-			}
-		})
-	}
-	var henan = function() {
-			$("#henan li").click(function() {
-				$("#city span").html($(this).html());
-				$("#henan").css("display", "none");
-				if($(this).html() === "郑州") {
-					$("#area img").click(function() {
-						$("#zz").css("display", "block");
-						$("#zz li").click(function() {
-							$("#area span").html($(this).html());
-							$("#zz").css("display", "none");
+//	点击省份
+	$("#sheng-one li").click(function() {
+		$("#sheng-one").css("display","none");
+		$("#sheng span").html($(this).html());
+//		判断省份的值
+		if($("#sheng span").html() == "北京") {
+			$("#beijing").css("display","block");
+			$("#beijing li").click(function() {
+				$("#beijing").css("display","none");
+		        $("#city span").html($(this).html());
+//		        判断市区的值
+		        if ( $("#city span").html() == "北京") {
+					$("#beijingqu").css("display","block");
+						$("#beijingqu li").click(function() {
+							$("#beijingqu").css("display","none");
+					        $("#area span").html($(this).html());
 						})
+				}
+			})
+		}
+		//		判断省份的值
+		if($("#sheng span").html() == "河南") {
+			$("#henan").css("display","block");
+			$("#henan li").click(function() {
+				$("#henan").css("display","none");
+		        $("#city span").html($(this).html());
+//		        判断市区的值
+		        if ( $("#city span").html() == "郑州") {
+					$("#zz").css("display","block");
+					$("#zz li").click(function() {
+						$("#zz").css("display","none");
+				        $("#area span").html($(this).html());
 					})
 				}
 			})
 		}
-		/****************评论框start*************评论框start***********评论框start*************评论框start*****************/
+	})
+		//点击市区按钮
+		$("#two-sanjiao").click(function(){
+			//如果省份显示北京  二级显示北京的市区
+			if($("#sheng span").html() == "北京"){
+				$("#beijing").css("display","block");
+					$("#beijingqu li").click(function() {
+						$("#beijingqu").css("display","none");
+						$("#area span").html($(this).html());
+					})
+			}
+		})
+		$("#two-sanjiao").click(function(){
+			//如果省份显示河南  二级显示河南的市区
+			if($("#sheng span").html() == "河南"){
+				$("#henan").css("display","block");
+					$("#zz li").click(function() {
+						$("#zz").css("display","none");
+						$("#area span").html($(this).html());
+					})
+			}
+		})
+	
+			
+	/****************评论框start*************评论框start***********评论框start*************评论框start*****************/
 	$("#shangpin span").click(function() {
 		$("#shangpin span").css("color", "#333333");
 		var n = $(this).index();
-		console.log(n);
 		for(var i = 0; i <= n; i++) {
 			$("#shangpin span").eq(i).css("color", "red");
-			//			console.log($("#shangpin span").eq(i));
+			//console.log($("#shangpin span").eq(i));
 		}
 	})
 	$("#fuwu span").click(function() {
@@ -72,7 +77,7 @@ $(function() {
 		var n = $(this).index();
 		for(var i = 0; i <= n; i++) {
 			$("#fuwu span").eq(i).css("color", "red");
-			//			console.log($("#fuwu span").eq(i));
+			//console.log($("#fuwu span").eq(i));
 		}
 	})
 	$("#miaoshu span").click(function() {
@@ -132,7 +137,6 @@ $(function() {
 	$("#shouhuo-name").blur(function(){
 		localStorage.setItem("a",$("#shouhuo-name").val())
 		namethree = localStorage.getItem("a");
-		console.log(namethree);
 	})
 	$("#btn-add-addres").click(function(){
 		window.location.href = "../html/personeAddress.html";
@@ -213,6 +217,14 @@ $(function() {
 	}
 	coll(".aaa");
 	coll(".bro");
+	//控制字数
+	$(".collect-info").each(function(){
+		var collStr = $(this).html();
+		console.log($(this).html());
+		if (collStr.length >= 23) {
+			$(this).html(collStr.substring(0,23) + "...");
+		}
+	});
 	/********************收藏页面***********end********************************/
 	/*******************左列表跳转**********start*******************/
 	var jump = $(".y-content-personal").find("li");

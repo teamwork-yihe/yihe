@@ -371,7 +371,7 @@ select::-ms-expand { display:none;}
 .sheng-wrap span,.city-wrap span,.phone-wd,.moren-ads,.area-wrap span{font-size: 16px;}
 .sheng-wrap img{position:absolute;left:130px;top: 10px;}
 .city-wrap img,.area-wrap img{position:absolute;left:130px;top: 10px;}
-.sheng-wrap ul,.city-wrap ul,.area-wrap ul{position: absolute;font-size: 16px;border: 1px solid #D3D3D3;top: -5px;background-color: #E3E3E3;width: 135px;left: 0;display: none;}
+.sheng-wrap ul,.city-wrap ul,.area-wrap ul{position: absolute;font-size: 16px;border: 1px solid #D3D3D3;top: -1px;background-color: #E3E3E3;width: 135px;left: 0;display: none;}
 /*.city-wrap ul{position: absolute;}*/
 .sheng-wrap ul li,.city-wrap ul li,.area-wrap ul li{cursor: default;}
 .city-wrap,.area-wrap{margin-left: 20px;/*float: left;*/}
@@ -432,4 +432,8 @@ select::-ms-expand { display:none;}
     color: #fff;
     border-radius: 5px;
     z-index: 10;
+<<<<<<< Updated upstream
 }
+=======
+/***********修改地址*********/
+>>>>>>> Stashed changes

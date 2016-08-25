@@ -128,6 +128,26 @@ $(function(){
 	$(".full").show();
 	$(".place-info-popup").show();
     });
+    
+    // 修改地址的信息start
+    $(document).on("click","#revise-ads",function(){// 新地址
+	fillInfo(-1);
+	$(".full").show();
+	$(".place-info-popup").show();
+    $(".buyer-name-text").val($(".shouhuoren span").text());
+    $(".province span").text($(".quyuads span").text().substring(0,2));
+    $(".city span").text($(".quyuads span").text().substring(2,6));
+    $(".town span").text($(".quyuads span").text().substring(6,13));
+    $(".buyer-address input").val($(".jiedaoads span").text());
+    $(".buyer-mobile input").eq(0).val($(".xgphone span").text());
+    $("#beizhu-xg input").val($(".beizhu span").text());
+    });
+    //保存修改后的地址
+    $(".new-place input").each(function(index,i) {
+    	$(this).bind("input propertychange",function() {
+    		console.log($(this).val());
+    	})
+    })
     $(document).on("click",".place-info .place-list li .modify",function(){ // 原地址修改按钮
 	var index = $(this).parent().attr("index");
 	fillInfo(parseInt(index));

@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/cart_order.css"/>
 	</head>
 	<body>
 		<!--表头-->
@@ -227,12 +228,12 @@
 					<ul class="address-info-wrap">
 						<li class="address-info-content">
 							<div class="one-div"><span>1</span></div>
-							<div class="two-div"><span>张****</span></div>
-							<div class="three-div"><span>河南 郑州市 高新技术开发区</span></div>
-							<div class="four-div"><span>威科姆产业园(蓝鸥科技)H01班</span></div>
-							<div class="five-div"><span>15932563265</span></div>
-							<div class="six-div"><span>送礼物</span></div>
-							<div class="seven-div"><span><a class="set-default" href="###"></a> <a href="###">修改</a>  <a class="addres-remove" href="###">删除</a></span></div>
+							<div class="two-div shouhuoren"><span>张****</span></div>
+							<div class="three-div quyuads"><span>河南 郑州市 高新技术开发区</span></div>
+							<div class="four-div jiedaoads"><span>威科姆产业园(蓝鸥科技)H01班</span></div>
+							<div class="five-div xgphone"><span>15932563265</span></div>
+							<div class="six-div beizhu"><span>送礼物</span></div>
+							<div class="seven-div"><span><a class="set-default" href="###"></a> <a id="revise-ads" href="###">修改</a>  <a class="addres-remove" href="###">删除</a></span></div>
 						</li>
 						<li class="address-info-content">
 							<div class="one-div"><span>1</span></div>
@@ -253,6 +254,58 @@
 							<div class="seven-div"><span><a class="set-default" href="###">设为默认</a> <a href="###">修改</a> <a class="addres-remove" href="###">删除</a></span></div>
 						</li>
 					</ul>
+					<!--修改地址弹框-->
+				<div class="full"></div>
+				<div class="place-info-popup">
+					<div class="title">
+						<span>收货人姓名</span>
+					</div>
+					<div class="new-place" id="resive-wrap">
+						<div class="buyer-name">
+							<div><span class="red">*&nbsp;</span>收货人姓名：</div>
+							<input style="border: 1px solid #d3d3d3;border-radius: 4px;" class="buyer-name-text" type="text" value="" />
+						</div>
+						<div class="buyer-location">
+							<div><span class="red">*&nbsp;</span>所在地区：</div>
+							<div class="location-box">
+								<div class="province select-box"><span>请选择省份</span>
+									<ul class="province-list">
+										<li value="default">请选择省份</li>
+									</ul>
+								</div>
+								<div class="city select-box"><span>请选择城市</span>
+									<ul class="city-list">
+										<li value="default">请选择城市</li>
+									</ul>
+								</div>
+								<div class="town select-box"><span>请选择地区</span>
+									<ul class="town-list">
+										<li value="default">请选择地区</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="buyer-address">
+							<div><span class="red">*&nbsp;</span>详细地址：</div>
+							<input style="border: 1px solid #d3d3d3;border-radius: 4px;" class="buyer-address-text" type="text" value="" />
+						</div>
+						<div class="buyer-mobile">
+							<div><span class="red">*&nbsp;</span>联系电话：</div>
+							<input style="border: 1px solid #d3d3d3;border-radius: 4px;" class="buyer-mobile-text" type="text" value="" />
+							<div>固定电话：</div>
+							<input style="border: 1px solid #d3d3d3;border-radius: 4px;" class="telno-prefix" type="text" value="" />-
+							<input style="border: 1px solid #d3d3d3;border-radius: 4px;" class="telno-suffix" type="text" value="" />
+						</div>
+						<div class="buyer-address" id="beizhu-xg">
+							<div><span class="red">*&nbsp;</span>备注：</div>
+							<input  style="border: 1px solid #d3d3d3;border-radius: 4px;width: 100px;" class="buyer-address-text" type="text" value="" />
+						</div>
+						<div class="btn-box">
+							<button class="close-btn" type="button">返回</button>
+							<button class="place-popup-btn" type="button">保存</button>
+						</div>
+					</div>
+				</div>
 					
 						
 			<!--********个人中心********right***end*******-->		
@@ -315,4 +368,5 @@
 	<script src="../js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/all_use.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cart_order.js" type="text/javascript" charset="utf-8"></script>
 </html>
