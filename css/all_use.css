@@ -303,10 +303,6 @@ ul{
 	color: white;
 }
 
-.search_nav>div:nth-child(6) a {
-	color: rgb(255, 108, 0);
-}
-
 .search_nav>div:nth-child(7) {
 	float: right;
 }

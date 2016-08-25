@@ -1,3 +1,7 @@
+/*导航颜色*/
+.search_nav>div:nth-child(4) a {
+	color: rgb(255, 108, 0);
+}
 .d_all{
 	border: 1px;
 	width: 1180px;

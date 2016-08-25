@@ -1,3 +1,7 @@
+/*导航颜色*/
+.search_nav>div:nth-child(6) a {
+	color: rgb(255, 108, 0);
+}
 #d_logo {
 	width: 100%;
 }

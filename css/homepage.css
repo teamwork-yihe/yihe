@@ -1,3 +1,7 @@
+/*导航颜色*/
+.search_nav>div:nth-child(2) a {
+	color: rgb(255, 108, 0);
+}
 .things-list{
     margin: 0 auto;
     width: 1180px;
