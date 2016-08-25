@@ -188,12 +188,23 @@ $("#sure").on("click",function  () {
 		if (num<0) {
 			alert("太小!看不到")
 		}else if (num==1) {
+			which_is.eq(1).text(1);
+			which_is.eq(2).text(2);
+			which_is.eq(3).text(3);
 			which_is.eq(1).css({"background-color":"rgb(0, 141, 225)","color":"white"});
 		}else if (num==2) {
+			which_is.eq(1).text(1);
+			which_is.eq(2).text(2);
+			which_is.eq(3).text(3);
 			which_is.eq(2).css({"background-color":"rgb(0, 141, 225)","color":"white"});
 		}else if (num==3) {
+			which_is.eq(1).text(1);
+			which_is.eq(2).text(2);
+			which_is.eq(3).text(3);
 			which_is.eq(3).css({"background-color":"rgb(0, 141, 225)","color":"white"});
 		}else if (num>3&&num<=55) {
+			which_is.eq(4).empty();
+			which_is.eq(4).text("...");
 			which_is.eq(1).text(num-1);
 			which_is.eq(2).text(num);
 			which_is.eq(3).text(num+1);
