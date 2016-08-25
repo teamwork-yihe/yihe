@@ -47,6 +47,34 @@ $('#inp').bind('input propertychange', function() { 
 	document.head.appendChild(script);
 	document.head.removeChild(script);
 });
+
+//键盘事件 回车 上下键 清除
+var keys = 0;
+$("#inp").keydown(function(event) {
+	//	console.log(event.which);
+	if(event.which == 13) {
+		document.location = "hangye08.html";
+	}
+	if(event.which == 38) {
+		keys--;
+		if(keys <= 0) {
+			keys = 0;
+		}
+		$(".inp_left ul li").css("background-color", "azure");
+		$(".inp_left ul li").eq(keys).css("background-color", "gainsboro");
+		$("#inp").val($(".inp_left ul li").eq(keys).text());
+	}
+	if(event.which == 40) {
+		keys++;
+		if(keys >= 5) {
+			keys = 5;
+		}
+		$(".inp_left ul li").css("background-color", "azure");
+		$(".inp_left ul li").eq(keys).css("background-color", "gainsboro");
+		$("#inp").val($(".inp_left ul li").eq(keys).text());
+	}
+});
+
 //轮播
 var len = $(".num > li").length;
 var index = 0; //图片序号
@@ -81,18 +109,18 @@ var click_is = 0;
 $(".change_center ul li").click(function() {
 //	$(".change_center ul li").css({"background-color":"white","color":"black"});
 //	$(this).css({"background-color":"rgb(0, 141, 225)","color":"white"});
-	
+
 	console.log(click_is);
 	click_is =$(".change_center ul li").index(this);
 	var which_is = $(".change_center ul li");
-	if (click_is==0) {		
+	if (click_is==0) {
 		if (which_is.eq(1).text()!=1) {
 			which_is.eq(1).text(parseInt(which_is.eq(1).text())-1);
 			which_is.eq(2).text(parseInt(which_is.eq(2).text())-1);
 			which_is.eq(3).text(parseInt(which_is.eq(3).text())-1);
 			which_is.eq(7).css({"background-color":"white","color":"black"});
 		}
-	}	
+	}
 	if (click_is==1) {
 		if ($(this).text()!=1) {
 			which_is.eq(1).text(parseInt(which_is.eq(1).text())-1);
@@ -112,7 +140,7 @@ $(".change_center ul li").click(function() {
 			which_is.eq(4).text("...");
 			which_is.css({"background-color":"white","color":"black"});
 		}else {
-			which_is.css({"background-color":"white","color":"black"});		
+			which_is.css({"background-color":"white","color":"black"});
 		}
 	}
 	if (click_is==3) {
@@ -135,12 +163,12 @@ $(".change_center ul li").click(function() {
 	if (click_is==4||click_is==5||click_is==6) {
 			which_is.css({"background-color":"white","color":"black"});
 	}
-	if (click_is==7) {		
+	if (click_is==7) {
 		if (which_is.eq(3).text()<=54) {
 			which_is.eq(1).text(parseInt(which_is.eq(1).text())+1);
 			which_is.eq(2).text(parseInt(which_is.eq(2).text())+1);
 			which_is.eq(3).text(parseInt(which_is.eq(3).text())+1);
-			which_is.eq(0).css({"background-color":"white","color":"black"});		
+			which_is.eq(0).css({"background-color":"white","color":"black"});
 		}else if (which_is.eq(3).text()==55) {
 			which_is.eq(1).empty();
 			which_is.eq(1).text("...");
@@ -156,7 +184,7 @@ $("#sure").on("click",function  () {
 	var which_is = $(".change_center ul li");
 	which_is.css({"background-color":"white","color":"black"});
 	console.log($(".changes").val());
-	var num= parseInt($(".changes").val());	
+	var num= parseInt($(".changes").val());
 		if (num<0) {
 			alert("太小!看不到")
 		}else if (num==1) {
@@ -513,7 +541,7 @@ $(function(){
 	if(usertelno == "" || usertelno == null){
 	    location.href="login.html";
 	}else{
-	    location.href="error.html";
+	    location.href="personeOrder.html";
 	}
     });
     // 我的消息
@@ -522,7 +550,7 @@ $(function(){
 	if(usertelno == "" || usertelno == null){
 	    location.href="login.html";
 	}else{
-	    location.href="error.html";
+	    location.href="personeMessage.html";
 	}
     });
 
@@ -547,8 +575,6 @@ $(function(){
     $(".search_2 a").click(function () {
     		location.href = "homepage.html";
     })
-    
-    
-});
-	
 
+
+});
