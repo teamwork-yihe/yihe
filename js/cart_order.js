@@ -130,10 +130,27 @@ $(function(){
     });
     
     // 修改地址的信息start
+  	var textA;
+  	var inputA;
     $(document).on("click","#revise-ads",function(){// 新地址
 	fillInfo(-1);
 	$(".full").show();
 	$(".place-info-popup").show();
+	$("#revise-ads").parents(".address-info-content").find("span").each(function(index,i) {
+//		aaa.push($(this).text());
+		 textA = $(i).text();
+//		console.log(textA);
+	});
+	$(".new-place input").each(function(index,i) {
+	 	inputA = $(i);
+	 	console.log(inputA);
+	})
+//	for (var i = 0 ; i <= 8 ; i++) {
+//		inputA.val(textA);
+//		console.log(inputA.val(textA))
+//	}
+	
+	
     $(".buyer-name-text").val($(".shouhuoren span").text());
     $(".province span").text($(".quyuads span").text().substring(0,2));
     $(".city span").text($(".quyuads span").text().substring(2,6));
@@ -143,10 +160,13 @@ $(function(){
     $("#beizhu-xg input").val($(".beizhu span").text());
     });
     //保存修改后的地址
+    $(".place-popup-btn").click(function() {
     $(".new-place input").each(function(index,i) {
-    	$(this).bind("input propertychange",function() {
-    		console.log($(this).val());
-    	})
+    		console.log($(i).val());
+		$(".shouhuoren span").text($(".buyer-name-text").val());
+		$(".quyuads span").text( $(".province span").text() + $(".city span").text() +   $(".town span").text());
+    })
+    	
     })
     $(document).on("click",".place-info .place-list li .modify",function(){ // 原地址修改按钮
 	var index = $(this).parent().attr("index");

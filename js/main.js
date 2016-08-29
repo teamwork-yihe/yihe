@@ -322,7 +322,8 @@ $(function() {
 	}
 	attPhone(".bt-it","../html/bindingPhonePage2.html");
 	attPhone(".bt-it-two","../html/bindingPhonePage3.html")
-	
-	
+	$("#bucunzai").click(function() {
+		location.href = "error.html";
+	})
 	
 })
