@@ -12,11 +12,4 @@
 [phoenixgelan](https://github.com/phoenixgelan)
 
 
-<<<<<<< Updated upstream
-
-chongtu
-=======
-abc
-
-cde
->>>>>>> Stashed changes
+入口页面为 guide.html
