@@ -1,0 +1,3 @@
+# 该文件用于设置不上传的文件
+.project
+.gitignore
